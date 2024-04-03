@@ -24,8 +24,8 @@ file_path = '../test.csv'
 headers = ["Moisture Level", "Time in s", "Time of Day", "Date"]
 
 # Check if the file exists
-if os.path.exists(file_path):
-    print("File already present, adding to current file")
+#if os.path.exists(file_path):
+    #print("File already present, adding to current file")
 if not os.path.exists(file_path):
     print("File not present, creating file...")
     # If the file doesn't exist, create it and write the headers to it
@@ -38,7 +38,7 @@ print("Writting to CSV File...")
 
 with open('test.csv', 'a', newline='') as file:
     writer = csv.writer(file)
-    field = ["Moisture Level", "Time in s", "Time of day"]
+    #field = ["Moisture Level", "Time in s", "Time of day"]
 
     #writer.writerow(field)
     writer.writerow([m,t,T,D])

@@ -10,7 +10,9 @@ This program aims to be used to perform the experiments required to find the rel
 # Imports
 import csv
 import os
+import time
 from datetime import datetime
+from grove_light_sensor_v1_2 import GroveLightSensor
 # Variables
 m = 50 #dummy value for moisture
 t = 5 #dummy value for time
@@ -42,5 +44,15 @@ with open('test.csv', 'a', newline='') as file:
 
     #writer.writerow(field)
     writer.writerow([m,t,T,D])
-    
+
 print("Writting finished")
+
+# connect to alalog pin 2(slot A2)
+PIN = 2
+
+sensor = GroveLightSensor(PIN)
+
+print('Detecting light...')
+while True:
+    print('Light value: {0}'.format(sensor.light))
+    time.sleep(1)

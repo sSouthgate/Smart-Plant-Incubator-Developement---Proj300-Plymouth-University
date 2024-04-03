@@ -16,9 +16,9 @@ from grove_light_sensor_v1_2 import GroveLightSensor
 # Variables
 m = 50 #dummy value for moisture
 t = 5 #dummy value for time
-current_date_time = datetime.now()
-T = current_date_time.strftime('%H:%M:%S')
-D = current_date_time.strftime("%d/%m")
+#current_date_time = datetime.now()
+#T = current_date_time.strftime('%H:%M:%S')
+#D = current_date_time.strftime("%d/%m")
 #x = 0 #test value
 
 # Set the file path and the headers for the CSV file
@@ -36,6 +36,24 @@ if not os.path.exists(file_path):
         csv_writer.writerow(headers)
     print("File created")
 
+# connect to analog pin 2(slot A2)
+PIN = 2
+#Define sensor
+sensor = GroveLightSensor(PIN)
+
+print('Detecting light...')
+while True:
+    current_date_time = datetime.now()
+    T = current_date_time.strftime('%H:%M:%S')
+    D = current_date_time.strftime("%d/%m")
+    
+    print('Light value: {0}'.format(sensor.light))
+    with open('test.csv', 'a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([sensor.light,t,T,D])
+    time.sleep(1)
+
+'''
 print("Writting to CSV File...")
 
 with open('test.csv', 'a', newline='') as file:
@@ -45,14 +63,5 @@ with open('test.csv', 'a', newline='') as file:
     #writer.writerow(field)
     writer.writerow([m,t,T,D])
 
-print("Writting finished")
-
-# connect to alalog pin 2(slot A2)
-PIN = 2
-
-sensor = GroveLightSensor(PIN)
-
-print('Detecting light...')
-while True:
-    print('Light value: {0}'.format(sensor.light))
-    time.sleep(1)
+#print("Writting finished")
+'''

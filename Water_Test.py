@@ -5,7 +5,7 @@ This program aims to be used to perform the experiments required to find the rel
     We wil be recording the data and exporting it through a generated .csv file.
     This file will allow us to plot a graph of the moisture change overtime with a fixed amount water distributed.
     We will then be able to find the relation between time, water, and moisture, 
-    this will allow us to know how much water is needed to be distributed over how much time to achieve the disired moisture level.
+    alowing us to know how much water is needed to be distributed over how much time to achieve the disired moisture level.
 '''
 # Imports
 import csv
@@ -36,13 +36,11 @@ if not os.path.exists(file_path):
 
 print("Writting to CSV File...")
 
-while x < 6:
-    with open('test.csv', 'a', newline='') as file:
-        writer = csv.writer(file)
-        field = ["Moisture Level", "Time in s", "Time of day"]
+with open('test.csv', 'a', newline='') as file:
+    writer = csv.writer(file)
+    field = ["Moisture Level", "Time in s", "Time of day"]
 
-        #writer.writerow(field)
-        writer.writerow([m,t,T,D])
-    x += 1
-
+    #writer.writerow(field)
+    writer.writerow([m,t,T,D])
+    
 print("Writting finished")

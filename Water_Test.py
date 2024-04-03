@@ -17,15 +17,15 @@ t = 5 #dummy value for time
 current_date_time = datetime.now()
 T = current_date_time.strftime('%H:%M:%S')
 D = current_date_time.strftime("%d/%m")
-x = 0 #test value
+#x = 0 #test value
 
 # Set the file path and the headers for the CSV file
-file_path = '../test.csv'
+file_path = '../Smart Plant Incubator Code/test.csv'
 headers = ["Moisture Level", "Time in s", "Time of Day", "Date"]
 
 # Check if the file exists
-#if os.path.exists(file_path):
-    #print("File already present, adding to current file")
+if os.path.exists(file_path):
+    print("File already present, adding to current file")
 if not os.path.exists(file_path):
     print("File not present, creating file...")
     # If the file doesn't exist, create it and write the headers to it

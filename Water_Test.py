@@ -21,6 +21,11 @@ t = 5 #dummy value for time
 #D = current_date_time.strftime("%d/%m")
 #x = 0 #test value
 
+# connect to analog pin 2(slot A2)
+PIN = 2
+#Define sensor
+sensor = GroveLightSensor(PIN)
+
 # Set the file path and the headers for the CSV file
 file_path = '../Smart-Plant-Incubator-Code/test.csv'
 headers = ["Moisture Level", "Time in s", "Time of Day", "Date"]
@@ -35,11 +40,6 @@ if not os.path.exists(file_path):
         csv_writer = csv.writer(file)
         csv_writer.writerow(headers)
     print("File created")
-
-# connect to analog pin 2(slot A2)
-PIN = 2
-#Define sensor
-sensor = GroveLightSensor(PIN)
 
 print('Detecting light...')
 while True:

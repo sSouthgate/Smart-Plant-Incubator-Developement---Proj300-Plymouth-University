@@ -27,7 +27,7 @@ PIN = 2
 sensor = GroveLightSensor(PIN)
 
 # Set the file path and the headers for the CSV file
-file_path = '../Smart Plant Incubator Code/test.csv'
+file_path = '../Smart-Plant-Incubator-Code/test.csv'
 headers = ["Moisture Level", "Time in s", "Time of Day", "Date"]
 
 # Check if the file exists

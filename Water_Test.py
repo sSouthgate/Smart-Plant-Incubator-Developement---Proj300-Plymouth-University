@@ -13,6 +13,8 @@ import os
 import time
 from datetime import datetime
 from grove_light_sensor_v1_2 import GroveLightSensor
+import RPi.GPIO as GPIO
+
 # Variables
 m = 50 #dummy value for moisture
 t = 5 #dummy value for time
@@ -21,6 +23,10 @@ t = 5 #dummy value for time
 #D = current_date_time.strftime("%d/%m")
 #x = 0 #test value
 
+# Set GPIO Pin numbering system
+GPIO.setmode(GPIO.BOARD)
+# Set GPIO Pin mode
+GPIO.setup(18, GPIO.OUT)
 # connect to analog pin 2(slot A2)
 PIN = 2
 #Define sensor

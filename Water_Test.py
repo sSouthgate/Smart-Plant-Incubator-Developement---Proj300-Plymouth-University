@@ -20,6 +20,7 @@ current_date_time = datetime.now()
 # VARIABLES
 t0 = time.time()                            # Current time in s
 T = current_date_time.strftime('%H:%M:%S')  # Current Time in Hours:Minutes:Seconds
+x = 1                                       # Time Valve will be open
 
 # SETUP RPi GPIO
 PIN = 32                    # Define RPi GPIO PIN
@@ -49,6 +50,9 @@ if not os.path.exists(file_path):
 
 print('EXPERIMENT START:',T)
 GPIO.output(PIN, 1)
+time.sleep(x) 
+GPIO.output(PIN, 0)
+
 try:   
     while True: #sensor.light > 10:
             # Set Variables at each start of the loop

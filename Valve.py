@@ -4,15 +4,6 @@ from grove_moisture_sensor import GroveMoistureSensor
 from grove_light_sensor_v1_2 import GroveLightSensor
 import RPi.GPIO as GPIO
 
-# VARIABLES
-#x = 300     # Moisture Threshhold
-
-# SETUP RPi GPIO
-#PIN = 32                    # Pin used to actovate Valve MOSFET
-#GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
-#GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
-#GPIO.output(PIN, 0)         # Set GPIO to Low
-
 def open_valve(PIN,S):
     '''
     Incubator Valve Control

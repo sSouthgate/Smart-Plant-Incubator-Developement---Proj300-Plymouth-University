@@ -3,17 +3,6 @@ import time
 from grove_light_sensor_v1_2 import GroveLightSensor
 import RPi.GPIO as GPIO
 
-# VARIABLES
-#x = 300     
-
-# SETUP RPi GPIO
-#PIN = 32                    # Pin used to actovate Valve MOSFET
-#GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
-#GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
-#GPIO.output(PIN, 0)         # Set GPIO to Low
-
-
-
 def light(PIN,L):
     '''
     Incubator Light Control

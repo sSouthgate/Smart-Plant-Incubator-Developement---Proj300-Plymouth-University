@@ -13,6 +13,7 @@ import os
 import time
 from datetime import datetime
 from grove_light_sensor_v1_2 import GroveLightSensor
+from grove_moisture_sensor import GroveMoistureSensor
 import RPi.GPIO as GPIO
 # Set current date and time
 current_date_time = datetime.now()
@@ -29,13 +30,15 @@ GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
 GPIO.output(PIN, 0)         # Set GPIO to Low
 
 # connect to analog pin 2(slot A2)
-sensorPin = 2
+light_Pin = 0
+moisture_Pin = 2
 # Define what grove sensor will be used
-sensor = GroveLightSensor(sensorPin) # using light sensor while developing code is easier to test
+moisture_sensor = GroveMoistureSensor(moisture_Pin) 
+light_sensor = GroveLightSensor(light_Pin)  # using light sensor while developing code is easier to test
 
 # Set the file path and the headers for the CSV file
 file_path = '../Smart-Plant-Incubator-Code/test.csv'
-headers = ["Moisture Level", "Time in s", "Time of Day", "Date"]
+headers = ["Moisture Level", "Light Levels", "Time in s", "Time of Day", "Date"]
 
 # Check if the file exists
 if os.path.exists(file_path):
@@ -64,12 +67,13 @@ try:
             
             # Print info to terminal for inspection
             print('Time Elapsed:', round(t1),'s')
-            print('Light value: {0}'.format(sensor.light))
+            print('Moisture value: {0}'.format(moisture_sensor.moisture))
+            print('Light value: {0}'.format(light_sensor.light))
             
             # Start writing data stream to data file.
             with open('test.csv', 'a', newline='') as file:
                 writer = csv.writer(file)                       
-                writer.writerow([sensor.light,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
+                writer.writerow([moisture_sensor.moisture,light_sensor.light,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
                 time.sleep(1)
 
 # When Ctrl+C is input do this:

@@ -34,7 +34,8 @@ GPIO.output(PIN, 0)         # Set GPIO to Low
 light_Pin = 0
 moisture_Pin = 2
 # Define what grove sensor will be used
-moisture_sensor = GroveMoistureSensor(moisture_Pin) 
+#moisture_sensor = GroveMoistureSensor(moisture_Pin)
+moisture_sensor = GroveTest(moisture_Pin)  # using this to test different voltage readout
 light_sensor = GroveLightSensor(light_Pin)  # using light sensor while developing code is easier to test
 
 # Set the file path and the headers for the CSV file

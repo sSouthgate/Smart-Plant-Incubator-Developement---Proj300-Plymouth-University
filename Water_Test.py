@@ -14,6 +14,7 @@ import time
 from datetime import datetime
 from grove_light_sensor_v1_2 import GroveLightSensor
 from grove_moisture_sensor import GroveMoistureSensor
+from test import GroveTest
 import RPi.GPIO as GPIO
 # Set current date and time
 current_date_time = datetime.now()
@@ -52,9 +53,15 @@ if not os.path.exists(file_path):
     print("File created")
 
 print('EXPERIMENT START:',T)
-GPIO.output(PIN, 1)
-time.sleep(x) 
-GPIO.output(PIN, 0)
+GPIO.output(PIN, 1)                                     # Set Pin High
+time.sleep(x)                                           # Sleep for 1s
+GPIO.output(PIN, 0)                                     # Set Pin to Low
+
+# Write to the CSV to identify new test
+with open('test.csv', 'a', newline='') as file:
+                csv_writer = csv.writer(file)                       
+                csv_writer.writerow(['NEW TEST'])
+
 
 try:   
     while True: #sensor.light > 10:
@@ -81,5 +88,11 @@ except KeyboardInterrupt:
     print('\nTest Terminated by User, Closing Program...')
 
 GPIO.output(PIN, 0) # Set GPIO pin low
-GPIO.cleanup
+GPIO.cleanup        # GPIO Clean Up (rests all pins to a neutral state)
+
+# Write to file that program ended
+with open('test.csv', 'a', newline='') as file:
+                csv_writer = csv.writer(file)                       
+                csv_writer.writerow(['END OF TEST'])
+
 print('PROGRAM END')

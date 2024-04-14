@@ -1,0 +1,3100 @@
+/home/auzon/Documents/Smart-Plant-Incubator-Code/Water_Test.py:29: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
+File already present, adding to current file
+EXPERIMENT START: 01:51:45
+Time Elapsed: 1 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 2 s
+Moisture value: 2217
+Light value: 11
+Time Elapsed: 3 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 4 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 5 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 6 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 7 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 8 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 9 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 10 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 11 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 12 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 13 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 14 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 15 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 16 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 17 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 18 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 19 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 20 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 21 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 22 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 23 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 24 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 25 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 26 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 27 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 28 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 29 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 30 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 31 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 32 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 33 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 34 s
+Moisture value: 2181
+Light value: 10
+Time Elapsed: 35 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 36 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 37 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 38 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 39 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 40 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 41 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 42 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 43 s
+Moisture value: 2181
+Light value: 12
+Time Elapsed: 44 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 45 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 46 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 47 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 48 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 49 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 50 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 51 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 52 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 53 s
+Moisture value: 2186
+Light value: 12
+Time Elapsed: 54 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 55 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 56 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 57 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 58 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 59 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 60 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 62 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 63 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 64 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 65 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 66 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 67 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 68 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 69 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 70 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 71 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 72 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 73 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 74 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 75 s
+Moisture value: 2183
+Light value: 12
+Time Elapsed: 76 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 77 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 78 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 79 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 80 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 81 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 82 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 83 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 84 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 85 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 86 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 87 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 88 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 89 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 90 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 91 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 92 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 93 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 94 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 95 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 96 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 97 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 98 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 99 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 100 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 101 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 102 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 103 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 104 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 105 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 106 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 107 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 108 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 109 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 110 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 111 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 112 s
+Moisture value: 2184
+Light value: 12
+Time Elapsed: 113 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 114 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 115 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 116 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 117 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 118 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 119 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 120 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 121 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 122 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 123 s
+Moisture value: 2188
+Light value: 12
+Time Elapsed: 124 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 125 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 126 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 127 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 128 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 129 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 130 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 131 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 132 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 133 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 134 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 135 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 136 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 137 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 138 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 139 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 140 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 141 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 142 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 143 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 144 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 145 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 146 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 147 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 148 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 149 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 150 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 151 s
+Moisture value: 2179
+Light value: 11
+Time Elapsed: 152 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 153 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 154 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 155 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 156 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 157 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 158 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 159 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 160 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 161 s
+Moisture value: 2185
+Light value: 12
+Time Elapsed: 162 s
+Moisture value: 2183
+Light value: 12
+Time Elapsed: 163 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 164 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 165 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 166 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 167 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 168 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 169 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 170 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 171 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 172 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 173 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 174 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 175 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 176 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 177 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 178 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 179 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 180 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 181 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 182 s
+Moisture value: 2176
+Light value: 11
+Time Elapsed: 183 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 184 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 185 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 186 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 187 s
+Moisture value: 2185
+Light value: 12
+Time Elapsed: 188 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 190 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 191 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 192 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 193 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 194 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 195 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 196 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 197 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 198 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 199 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 200 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 201 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 202 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 203 s
+Moisture value: 2184
+Light value: 12
+Time Elapsed: 204 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 205 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 206 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 207 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 208 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 209 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 210 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 211 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 212 s
+Moisture value: 2181
+Light value: 10
+Time Elapsed: 213 s
+Moisture value: 2182
+Light value: 12
+Time Elapsed: 214 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 215 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 216 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 217 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 218 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 219 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 220 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 221 s
+Moisture value: 2184
+Light value: 12
+Time Elapsed: 222 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 223 s
+Moisture value: 2182
+Light value: 12
+Time Elapsed: 224 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 225 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 226 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 227 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 228 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 229 s
+Moisture value: 2267
+Light value: 10
+Time Elapsed: 230 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 231 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 232 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 233 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 234 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 235 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 236 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 237 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 238 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 239 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 240 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 241 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 242 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 243 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 244 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 245 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 246 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 247 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 248 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 249 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 250 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 251 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 252 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 253 s
+Moisture value: 2182
+Light value: 12
+Time Elapsed: 254 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 255 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 256 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 257 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 258 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 259 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 260 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 261 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 262 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 263 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 264 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 265 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 266 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 267 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 268 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 269 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 270 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 271 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 272 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 273 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 274 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 275 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 276 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 277 s
+Moisture value: 2186
+Light value: 12
+Time Elapsed: 278 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 279 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 280 s
+Moisture value: 2176
+Light value: 10
+Time Elapsed: 281 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 282 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 283 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 284 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 285 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 286 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 287 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 288 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 289 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 290 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 291 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 292 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 293 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 294 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 295 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 296 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 297 s
+Moisture value: 2179
+Light value: 11
+Time Elapsed: 298 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 299 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 300 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 301 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 302 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 303 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 304 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 305 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 306 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 307 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 308 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 309 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 310 s
+Moisture value: 2201
+Light value: 11
+Time Elapsed: 311 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 312 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 313 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 314 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 315 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 316 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 318 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 319 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 320 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 321 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 322 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 323 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 324 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 325 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 326 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 327 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 328 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 329 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 330 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 331 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 332 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 333 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 334 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 335 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 336 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 337 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 338 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 339 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 340 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 341 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 342 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 343 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 344 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 345 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 346 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 347 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 348 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 349 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 350 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 351 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 352 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 353 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 354 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 355 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 356 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 357 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 358 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 359 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 360 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 361 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 362 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 363 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 364 s
+Moisture value: 2184
+Light value: 12
+Time Elapsed: 365 s
+Moisture value: 2181
+Light value: 10
+Time Elapsed: 366 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 367 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 368 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 369 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 370 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 371 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 372 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 373 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 374 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 375 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 376 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 377 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 378 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 379 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 380 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 381 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 382 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 383 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 384 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 385 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 386 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 387 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 388 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 389 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 390 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 391 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 392 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 393 s
+Moisture value: 2181
+Light value: 13
+Time Elapsed: 394 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 395 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 396 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 397 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 398 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 399 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 400 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 401 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 402 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 403 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 404 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 405 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 406 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 407 s
+Moisture value: 2184
+Light value: 9
+Time Elapsed: 408 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 409 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 410 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 411 s
+Moisture value: 2181
+Light value: 10
+Time Elapsed: 412 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 413 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 414 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 415 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 416 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 417 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 418 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 419 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 420 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 421 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 422 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 423 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 424 s
+Moisture value: 2177
+Light value: 10
+Time Elapsed: 425 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 426 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 427 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 428 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 429 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 430 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 431 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 432 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 433 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 434 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 435 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 436 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 437 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 438 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 439 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 440 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 441 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 442 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 443 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 444 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 446 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 447 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 448 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 449 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 450 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 451 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 452 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 453 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 454 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 455 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 456 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 457 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 458 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 459 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 460 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 461 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 462 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 463 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 464 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 465 s
+Moisture value: 2181
+Light value: 10
+Time Elapsed: 466 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 467 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 468 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 469 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 470 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 471 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 472 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 473 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 474 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 475 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 476 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 477 s
+Moisture value: 2180
+Light value: 10
+Time Elapsed: 478 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 479 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 480 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 481 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 482 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 483 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 484 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 485 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 486 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 487 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 488 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 489 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 490 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 491 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 492 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 493 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 494 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 495 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 496 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 497 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 498 s
+Moisture value: 2185
+Light value: 12
+Time Elapsed: 499 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 500 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 501 s
+Moisture value: 2179
+Light value: 10
+Time Elapsed: 502 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 503 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 504 s
+Moisture value: 2181
+Light value: 10
+Time Elapsed: 505 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 506 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 507 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 508 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 509 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 510 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 511 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 512 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 513 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 514 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 515 s
+Moisture value: 2194
+Light value: 11
+Time Elapsed: 516 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 517 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 518 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 519 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 520 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 521 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 522 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 523 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 524 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 525 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 526 s
+Moisture value: 2180
+Light value: 10
+Time Elapsed: 527 s
+Moisture value: 2178
+Light value: 11
+Time Elapsed: 528 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 529 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 530 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 531 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 532 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 533 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 534 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 535 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 536 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 537 s
+Moisture value: 2181
+Light value: 10
+Time Elapsed: 538 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 539 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 540 s
+Moisture value: 2175
+Light value: 11
+Time Elapsed: 541 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 542 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 543 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 544 s
+Moisture value: 2181
+Light value: 12
+Time Elapsed: 545 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 546 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 547 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 548 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 549 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 550 s
+Moisture value: 2184
+Light value: 6
+Time Elapsed: 551 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 552 s
+Moisture value: 2285
+Light value: 12
+Time Elapsed: 553 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 554 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 555 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 556 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 557 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 558 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 559 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 560 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 561 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 562 s
+Moisture value: 2183
+Light value: 11
+Time Elapsed: 563 s
+Moisture value: 2183
+Light value: 10
+Time Elapsed: 564 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 565 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 566 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 567 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 568 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 569 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 570 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 571 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 572 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 573 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 574 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 575 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 577 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 578 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 579 s
+Moisture value: 2182
+Light value: 11
+Time Elapsed: 580 s
+Moisture value: 2181
+Light value: 12
+Time Elapsed: 581 s
+Moisture value: 2185
+Light value: 10File already present, adding to current file
+EXPERIMENT START: 02:05:00
+Time Elapsed: 1 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 2 s
+Moisture value: 2192
+Light value: 10
+Time Elapsed: 3 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 4 s
+Moisture value: 2195
+Light value: 11
+Time Elapsed: 5 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 6 s
+Moisture value: 2199
+Light value: 11
+Time Elapsed: 7 s
+Moisture value: 2194
+Light value: 10
+Time Elapsed: 8 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 9 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 10 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 11 s
+Moisture value: 2194
+Light value: 11
+Time Elapsed: 12 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 13 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 14 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 15 s
+Moisture value: 2193
+Light value: 11
+Time Elapsed: 16 s
+Moisture value: 2192
+Light value: 12
+Time Elapsed: 17 s
+Moisture value: 2193
+Light value: 11
+Time Elapsed: 18 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 19 s
+Moisture value: 2193
+Light value: 11
+Time Elapsed: 20 s
+Moisture value: 2195
+Light value: 11
+Time Elapsed: 21 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 22 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 23 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 24 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 25 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 26 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 27 s
+Moisture value: 2196
+Light value: 11
+Time Elapsed: 28 s
+Moisture value: 2194
+Light value: 11
+Time Elapsed: 29 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 30 s
+Moisture value: 2194
+Light value: 11
+Time Elapsed: 31 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 32 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 33 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 34 s
+Moisture value: 2194
+Light value: 11
+Time Elapsed: 35 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 36 s
+Moisture value: 2193
+Light value: 11
+Time Elapsed: 37 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 38 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 39 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 40 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 41 s
+Moisture value: 2192
+Light value: 10
+Time Elapsed: 42 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 43 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 44 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 45 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 46 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 47 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 48 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 49 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 50 s
+Moisture value: 2195
+Light value: 11
+Time Elapsed: 51 s
+Moisture value: 2194
+Light value: 12
+Time Elapsed: 52 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 53 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 54 s
+Moisture value: 2191
+Light value: 6
+Time Elapsed: 55 s
+Moisture value: 2191
+Light value: 6
+Time Elapsed: 56 s
+Moisture value: 2193
+Light value: 5
+Time Elapsed: 57 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 58 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 59 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 60 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 61 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 62 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 63 s
+Moisture value: 2191
+Light value: 12
+Time Elapsed: 64 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 65 s
+Moisture value: 2193
+Light value: 11
+Time Elapsed: 66 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 67 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 68 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 69 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 70 s
+Moisture value: 2196
+Light value: 11
+Time Elapsed: 71 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 72 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 74 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 75 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 76 s
+Moisture value: 2188
+Light value: 12
+Time Elapsed: 77 s
+Moisture value: 2194
+Light value: 10
+Time Elapsed: 78 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 79 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 80 s
+Moisture value: 2189
+Light value: 10
+Time Elapsed: 81 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 82 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 83 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 84 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 85 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 86 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 87 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 88 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 89 s
+Moisture value: 2192
+Light value: 12
+Time Elapsed: 90 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 91 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 92 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 93 s
+Moisture value: 2190
+Light value: 12
+Time Elapsed: 94 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 95 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 96 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 97 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 98 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 99 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 100 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 101 s
+Moisture value: 2180
+Light value: 11
+Time Elapsed: 102 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 103 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 104 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 105 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 106 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 107 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 108 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 109 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 110 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 111 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 112 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 113 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 114 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 115 s
+Moisture value: 2193
+Light value: 12
+Time Elapsed: 116 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 117 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 118 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 119 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 120 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 121 s
+Moisture value: 2196
+Light value: 11
+Time Elapsed: 122 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 123 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 124 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 125 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 126 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 127 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 128 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 129 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 130 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 131 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 132 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 133 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 134 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 135 s
+Moisture value: 2190
+Light value: 13
+Time Elapsed: 136 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 137 s
+Moisture value: 2189
+Light value: 10
+Time Elapsed: 138 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 139 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 140 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 141 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 142 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 143 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 144 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 145 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 146 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 147 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 148 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 149 s
+Moisture value: 2193
+Light value: 11
+Time Elapsed: 150 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 151 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 152 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 153 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 154 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 155 s
+Moisture value: 2191
+Light value: 12
+Time Elapsed: 156 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 157 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 158 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 159 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 160 s
+Moisture value: 2188
+Light value: 12
+Time Elapsed: 161 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 162 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 163 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 164 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 165 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 166 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 167 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 168 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 169 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 170 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 171 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 172 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 173 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 174 s
+Moisture value: 2179
+Light value: 11
+Time Elapsed: 175 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 176 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 177 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 178 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 179 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 180 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 181 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 182 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 183 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 184 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 185 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 186 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 187 s
+Moisture value: 2194
+Light value: 12
+Time Elapsed: 188 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 189 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 190 s
+Moisture value: 2181
+Light value: 11
+Time Elapsed: 191 s
+Moisture value: 2193
+Light value: 11
+Time Elapsed: 192 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 193 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 194 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 195 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 196 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 197 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 198 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 199 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 200 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 201 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 202 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 203 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 204 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 205 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 206 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 207 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 208 s
+Moisture value: 2186
+Light value: 12
+Time Elapsed: 210 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 211 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 212 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 213 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 214 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 215 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 216 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 217 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 218 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 219 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 220 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 221 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 222 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 223 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 224 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 225 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 226 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 227 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 228 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 229 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 230 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 231 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 232 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 233 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 234 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 235 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 236 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 237 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 238 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 239 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 240 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 241 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 242 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 243 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 244 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 245 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 246 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 247 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 248 s
+Moisture value: 2189
+Light value: 10
+Time Elapsed: 249 s
+Moisture value: 2188
+Light value: 12
+Time Elapsed: 250 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 251 s
+Moisture value: 2188
+Light value: 12
+Time Elapsed: 252 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 253 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 254 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 255 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 256 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 257 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 258 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 259 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 260 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 261 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 262 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 263 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 264 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 265 s
+Moisture value: 2190
+Light value: 12
+Time Elapsed: 266 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 267 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 268 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 269 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 270 s
+Moisture value: 2176
+Light value: 11
+Time Elapsed: 271 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 272 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 273 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 274 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 275 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 276 s
+Moisture value: 2189
+Light value: 12
+Time Elapsed: 277 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 278 s
+Moisture value: 2188
+Light value: 12
+Time Elapsed: 279 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 280 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 281 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 282 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 283 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 284 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 285 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 286 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 287 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 288 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 289 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 290 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 291 s
+Moisture value: 2189/home/auzon/Documents/Smart-Plant-Incubator-Code/Water_Test.py:29: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
+File already present, adding to current file
+EXPERIMENT START: 02:13:02
+Time Elapsed: 1 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 2 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 3 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 4 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 5 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 6 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 7 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 8 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 9 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 10 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 11 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 12 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 13 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 14 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 15 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 16 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 17 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 18 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 19 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 20 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 21 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 22 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 23 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 24 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 25 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 26 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 27 s
+Moisture value: 2187
+Light value: 13
+Time Elapsed: 28 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 29 s
+Moisture value: 2191
+Light value: 11
+Time Elapsed: 30 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 31 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 32 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 33 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 34 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 35 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 36 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 37 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 38 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 39 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 40 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 41 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 42 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 43 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 44 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 45 s
+Moisture value: 2182
+Light value: 10
+Time Elapsed: 46 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 47 s
+Moisture value: 2186
+Light value: 12
+Time Elapsed: 48 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 49 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 50 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 51 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 52 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 53 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 54 s
+Moisture value: 2184
+Light value: 12
+Time Elapsed: 55 s
+Moisture value: 2188
+Light value: 12
+Time Elapsed: 56 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 57 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 58 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 59 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 60 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 61 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 62 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 63 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 64 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 65 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 66 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 68 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 69 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 70 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 71 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 72 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 73 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 74 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 75 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 76 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 77 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 78 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 79 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 80 s
+Moisture value: 2188
+Light value: 11
+
+Test Terminated by User, Closing Program...
+PROGRAM END
+/home/auzon/Documents/Smart-Plant-Incubator-Code/Water_Test.py:29: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
+File already present, adding to current file
+EXPERIMENT START: 02:14:38
+Time Elapsed: 1 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 2 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 3 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 4 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 5 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 6 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 7 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 8 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 9 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 10 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 11 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 12 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 13 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 14 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 23 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 24 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 25 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 26 s
+Moisture value: 2166
+Light value: 10
+Time Elapsed: 27 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 28 s
+Moisture value: 2188
+Light value: 12
+Time Elapsed: 29 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 30 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 31 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 32 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 33 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 34 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 35 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 36 s
+Moisture value: 2190
+Light value: 10
+Time Elapsed: 37 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 38 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 39 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 40 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 41 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 42 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 43 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 44 s
+Moisture value: 2192
+Light value: 11
+Time Elapsed: 45 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 46 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 47 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 48 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 49 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 50 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 51 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 52 s
+Moisture value: 2189
+Light value: 11
+Time Elapsed: 53 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 54 s
+Moisture value: 2180
+Light value: 10
+Time Elapsed: 55 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 56 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 57 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 58 s
+Moisture value: 2176
+Light value: 11
+Time Elapsed: 59 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 60 s
+Moisture value: 2186
+Light value: 12
+Time Elapsed: 61 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 62 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 63 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 64 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 65 s
+Moisture value: 2185
+Light value: 11
+Time Elapsed: 66 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 67 s
+Moisture value: 2185
+Light value: 10
+Time Elapsed: 68 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 69 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 70 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 71 s
+Moisture value: 2184
+Light value: 10
+Time Elapsed: 72 s
+Moisture value: 2188
+Light value: 11
+Time Elapsed: 73 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 74 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 75 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 76 s
+Moisture value: 2188
+Light value: 10
+Time Elapsed: 77 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 78 s
+Moisture value: 2190
+Light value: 11
+Time Elapsed: 79 s
+Moisture value: 2186
+Light value: 10
+Time Elapsed: 80 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 81 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 82 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 83 s
+Moisture value: 2183
+Light value: 3
+Time Elapsed: 84 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 85 s
+Moisture value: 2186
+Light value: 11
+Time Elapsed: 86 s
+Moisture value: 2187
+Light value: 11
+Time Elapsed: 87 s
+Moisture value: 2180
+Light value: 10
+Time Elapsed: 89 s
+Moisture value: 2184
+Light value: 11
+Time Elapsed: 90 s
+Moisture value: 2193
+Light value: 11
+Time Elapsed: 91 s
+Moisture value: 2187
+Light value: 10
+Time Elapsed: 92 s
+Moisture value: 2186
+Light value: 11
+
+Test Terminated by User, Closing Program...
+PROGRAM END
+/home/auzon/Documents/Smart-Plant-Incubator-Code/Water_Test.py:29: RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.
+  GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output

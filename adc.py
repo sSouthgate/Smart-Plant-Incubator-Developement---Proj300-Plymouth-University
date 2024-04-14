@@ -39,7 +39,7 @@ __all__ = [
     "RPI_HAT_PID", "RPI_ZERO_HAT_PID"
 ]
 
-RPI_HAT_PID      = 0x0004
+RPI_HAT_PID      = 0x0008
 RPI_ZERO_HAT_PID = 0x0005
 RPI_HAT_NAME     = 'Grove Base Hat RPi'
 """ The HAT name to compare with return value of :class:`ADC.name` """
@@ -157,6 +157,6 @@ if __name__ == '__main__':
 
     adc = ADC()
     while True:
-        print(adc.read_voltage(0))
+        print(adc.read_voltage(2))
         time.sleep(1)
 

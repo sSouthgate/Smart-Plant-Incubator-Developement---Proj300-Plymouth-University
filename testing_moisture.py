@@ -1,5 +1,5 @@
 import time
-from grove.grove_moisture_sensor import GroveMoistureSensor
+from test import GroveTest
 
 from helper import SlotHelper
 sh = SlotHelper(SlotHelper.ADC)
@@ -8,7 +8,7 @@ pin = sh.argv2pin()
 # connect to alalog pin 2(slot A2)
 PIN = 2
 
-sensor = GroveMoistureSensor(pin)
+sensor = GroveTest(pin)
 
 print('Detecting moisture...')
 while True:

@@ -12,12 +12,15 @@ sensor = GroveTest(pin)
 
 print('Detecting moisture...')
 while True:
+    n = float
     m = sensor.moisture
-    if 0 <= m and m < 300:
-        result = 'Dry'
-    elif 300 <= m and m < 600:
-        result = 'Moist'
-    else:
-        result = 'Wet'
-    print('Moisture value: {0}, {1}'.format(m, result))
+    n = (3300 / 4095) * m
+    n = round(n / 1000,2 )
+    #if 0 <= m and m < 300:
+    #    result = 'Dry'
+    #elif 300 <= m and m < 600:
+    #    result = 'Moist'
+    #else:
+    #    result = 'Wet'
+    print('Moisture value: {0}'.format(n))
     time.sleep(1)

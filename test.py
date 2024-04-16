@@ -20,7 +20,7 @@ class GroveTest:
         Returns:
             (int): voltage, in mV
         '''
-        value = self.adc.read(self.channel)
+        value = self.adc.read_raw(self.channel)
         return value
 
 Grove = GroveTest

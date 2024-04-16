@@ -15,6 +15,7 @@ from datetime import datetime
 from grove_light_sensor_v1_2 import GroveLightSensor
 from grove_moisture_sensor import GroveMoistureSensor
 from test import GroveTest
+from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
 # Set current date and time
 current_date_time = datetime.now()
@@ -35,8 +36,8 @@ light_Pin = 0
 moisture_Pin = 2
 # Define what grove sensor will be used
 #moisture_sensor = GroveMoistureSensor(moisture_Pin)
-moisture_sensor = GroveTest(moisture_Pin)  # using this to test different voltage readout
-light_sensor = GroveLightSensor(light_Pin)  # using light sensor while developing code is easier to test
+moisture = AdcSensor(moisture_Pin)  # using this to test different voltage readout
+light = AdcSensor(light_Pin)  # using light sensor while developing code is easier to test
 
 # Set the file path and the headers for the CSV file
 file_path = '../Smart-Plant-Incubator-Code/test.csv'
@@ -72,19 +73,19 @@ try:
             D = current_date_time.strftime('%d/%m')         # Define D as current Date in day/month
             t1 = time.time()                                # Define t1 as current time in seconds
             t1 = t1 - t0                                    # Substract t1(current time in s) from t0(Start time in s of program)
-            m = moisture_sensor.moisture
+            m = moisture.adc_sensor
             m = (3300 / 4095) * m
             m = round(m / 1000,2)
 
             # Print info to terminal for inspection
             print('Time Elapsed: {0}s'.format(round(t1)))
             print('Moisture value: {0}V'.format(m))
-            print('Light value: {0}'.format(light_sensor.light))
+            print('Light value: {0}'.format(light.adc_sensor))
             
             # Start writing data stream to data file.
             with open('test.csv', 'a', newline='') as file:
                 writer = csv.writer(file)                       
-                writer.writerow([m,light_sensor.light,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
+                writer.writerow([m,light.adc_sensor,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
                 time.sleep(1)
 
 # When Ctrl+C is input do this:

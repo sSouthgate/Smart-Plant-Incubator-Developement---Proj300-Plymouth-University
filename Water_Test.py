@@ -72,16 +72,19 @@ try:
             D = current_date_time.strftime('%d/%m')         # Define D as current Date in day/month
             t1 = time.time()                                # Define t1 as current time in seconds
             t1 = t1 - t0                                    # Substract t1(current time in s) from t0(Start time in s of program)
-            
+            m = moisture_sensor.moisture
+            m = (3300 / 4095) * m
+            m = round(m / 1000,2)
+
             # Print info to terminal for inspection
-            print('Time Elapsed:', round(t1),'s')
-            print('Moisture value: {0}'.format(moisture_sensor.moisture))
+            print('Time Elapsed: {0}s'.format(round(t1)))
+            print('Moisture value: {0}V'.format(m))
             print('Light value: {0}'.format(light_sensor.light))
             
             # Start writing data stream to data file.
             with open('test.csv', 'a', newline='') as file:
                 writer = csv.writer(file)                       
-                writer.writerow([moisture_sensor.moisture,light_sensor.light,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
+                writer.writerow([m,light_sensor.light,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
                 time.sleep(1)
 
 # When Ctrl+C is input do this:

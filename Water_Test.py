@@ -55,9 +55,11 @@ if not os.path.exists(file_path):
     print("File created")
 
 print('EXPERIMENT START:',T)
-GPIO.output(PIN, 1)                                     # Set Pin High
-time.sleep(x)                                           # Sleep for 1s
-GPIO.output(PIN, 0)                                     # Set Pin to Low
+
+# Open and Close Valve
+#GPIO.output(PIN, 1)                                     # Set Pin High
+#time.sleep(x)                                           # Sleep for 1s
+#GPIO.output(PIN, 0)                                     # Set Pin to Low
 
 # Write to the CSV to identify new test
 with open('test.csv', 'a', newline='') as file:
@@ -73,14 +75,15 @@ try:
             D = current_date_time.strftime('%d/%m')         # Define D as current Date in day/month
             t1 = time.time()                                # Define t1 as current time in seconds
             t1 = t1 - t0                                    # Substract t1(current time in s) from t0(Start time in s of program)
+            
             m = moisture.adc_sensor
-            m = (3300 / 4095) * m
-            m = round(m / 1000,2)
+            #m = (3300 / 4095) * m
+            #m = round(m / 1000,2)
 
             # Print info to terminal for inspection
             print('Time Elapsed: {0}s'.format(round(t1)))
             print('Moisture value: {0}V'.format(m))
-            print('Light value: {0}'.format(light.adc_sensor))
+            print('Light value: {0}V'.format(light.adc_sensor))
             
             # Start writing data stream to data file.
             with open('test.csv', 'a', newline='') as file:

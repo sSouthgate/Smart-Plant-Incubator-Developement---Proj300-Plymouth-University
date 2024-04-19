@@ -2,6 +2,7 @@
 import time
 from grove_light_sensor_v1_2 import GroveLightSensor
 import RPi.GPIO as GPIO
+from adc_sensor import AdcSensor
 
 def light(PIN,L):
     '''
@@ -9,7 +10,7 @@ def light(PIN,L):
     
     Args:
         PIN(int): RPi GPIO Pin connected to Light circuit MOSFET
-        l(int): Desired Light Level for lights to turn on
+        L(int): Desired Light Level for lights to turn on
     '''
 
     # SETUP RPi GPIO
@@ -19,18 +20,18 @@ def light(PIN,L):
     GPIO.output(PIN, 0)         # Set GPIO to Low
     
     # Define Moisture Sensor Pin Number
-    sensor = GroveLightSensor(2)
+    sensor = AdcSensor(0)
     
     while True:
-        if sensor.light < L:
+        if sensor.adc_sensor < L:
             state = 'Low Light Levels, Turning On Lights'
-            print('Light Level: {0}, {1}'.format(sensor.light, state))
+            print('Light Level: {0}, {1}'.format(sensor.adc_sensor, state))
             GPIO.output(PIN, 1)
             time.sleep(1)
         else:
             state = 'Light Levels Nominal, Turning Off Lights'
-            print('Light Level: {0}, {1}'.format(sensor.light, state))
+            print('Light Level: {0}, {1}'.format(sensor.adc_sensor, state))
             GPIO.output(PIN, 0)
             time.sleep(1)
 
-#light(32, 50)
+#light(32, 1.33)

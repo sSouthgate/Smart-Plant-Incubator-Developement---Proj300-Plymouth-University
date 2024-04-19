@@ -1,5 +1,5 @@
 import time
-from test import GroveTest
+from test_adc_read import GroveTest
 
 from helper import SlotHelper
 sh = SlotHelper(SlotHelper.ADC)

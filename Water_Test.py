@@ -12,11 +12,12 @@ import csv
 import os
 import time
 from datetime import datetime
-from grove_light_sensor_v1_2 import GroveLightSensor
-from grove_moisture_sensor import GroveMoistureSensor
-from test import GroveTest
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
+# Grove Imports
+#from grove_light_sensor_v1_2 import GroveLightSensor
+#from grove_moisture_sensor import GroveMoistureSensor
+
 # Set current date and time
 current_date_time = datetime.now()
 
@@ -31,16 +32,16 @@ GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
 GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
 GPIO.output(PIN, 0)         # Set GPIO to Low
 
-# connect to analog pin 2(slot A2)
+# Connect sensors to appropriate slots on hat
 light_Pin = 0
 moisture_Pin = 2
+
 # Define what grove sensor will be used
-#moisture_sensor = GroveMoistureSensor(moisture_Pin)
 moisture = AdcSensor(moisture_Pin)  # using this to test different voltage readout
-light = AdcSensor(light_Pin)  # using light sensor while developing code is easier to test
+light = AdcSensor(light_Pin)        # using light sensor while developing code is easier to test
 
 # Set the file path and the headers for the CSV file
-file_path = '../Smart-Plant-Incubator-Code/test.csv'
+file_path = '../Smart-Plant-Incubator-Code/sensor_log.csv'
 headers = ["Moisture Level", "Light Levels", "Time in s", "Time of Day", "Date"]
 
 # Check if the file exists
@@ -62,7 +63,7 @@ print('EXPERIMENT START:',T)
 #GPIO.output(PIN, 0)                                     # Set Pin to Low
 
 # Write to the CSV to identify new test
-with open('test.csv', 'a', newline='') as file:
+with open(file_path, 'a', newline='') as file:
                 csv_writer = csv.writer(file)                       
                 csv_writer.writerow(['NEW TEST'])
 
@@ -86,7 +87,7 @@ try:
             print('Light value: {0}V'.format(light.adc_sensor))
             
             # Start writing data stream to data file.
-            with open('test.csv', 'a', newline='') as file:
+            with open(file_path, 'a', newline='') as file:
                 writer = csv.writer(file)                       
                 writer.writerow([m,light.adc_sensor,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
                 time.sleep(1)
@@ -99,7 +100,7 @@ GPIO.output(PIN, 0) # Set GPIO pin low
 GPIO.cleanup        # GPIO Clean Up (rests all pins to a neutral state)
 
 # Write to file that program ended
-with open('test.csv', 'a', newline='') as file:
+with open(file_path, 'a', newline='') as file:
                 csv_writer = csv.writer(file)                       
                 csv_writer.writerow(['END OF TEST'])
 

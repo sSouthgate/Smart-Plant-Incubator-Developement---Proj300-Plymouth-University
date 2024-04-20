@@ -27,14 +27,14 @@ def avg_moisture():
     #Loop over 60 iterations and sleep for 6 seconds in each loop - an hour worth of data
     while (n < 60) :
         
-        # print('Loop nbr:',n)
-        # print('m =', m)
-        # print('ADC =', moisture.adc_sensor)
+        print('Loop nbr:',n)
+        print('m =', m)
+        print('ADC =', moisture.adc_sensor)
         m = m + moisture.adc_sensor
         n = n + 1
         time.sleep (60)
-        #print('Done a sleep')
-        #print('after loop \n    m =',m,'\n  ADC =', moisture.adc_sensor)
+        print('Done a sleep')
+        print('after loop \n    m =',m,'\n  ADC =', moisture.adc_sensor)
 
     # Get the average of the moisture value over 1 hour
     m = m / n
@@ -42,27 +42,27 @@ def avg_moisture():
     # Round m to 2 decimal points for consistency with adc_sensor class.
     m = round(m, 2)
     
-    """ # If loop logic dependent on moisture level set PIN high or low
+ # If loop logic dependent on moisture level set PIN high or low
     if m < 1.6:
-        GPIO.output(PIN, 1)
+        #GPIO.output(PIN, 1)
         state = 'Soil Dry, Opening Valve'
         print('Moisture Level: {0}.\n{1}'.format(m, state))
-        time.sleep(S)
-        GPIO.output(PIN, 0)
+        time.sleep(1)
+        #GPIO.output(PIN, 0)
         print('Water Dispensed, Valve Closed')
     elif m < 2.0:
-        GPIO.output(PIN, 0)
+        #GPIO.output(PIN, 0)
         state = 'Soil is moist - No need to water'
         print('Moisture Level: {0}, {1}'.format(m, state))
     else:
-        GPIO.output(PIN, 0)
+        #GPIO.output(PIN, 0)
         state = 'PLANT IS OVERWATERED!!!!'
         print('Moisture Level: {0}, {1}'.format(m,state))
- """
+
     
     # Return the Value stored in m
     return m
 #valve(32, 5)
 
 if __name__ == '__main__':
-    avg_moisture(32, 5)
+   avg_moisture()

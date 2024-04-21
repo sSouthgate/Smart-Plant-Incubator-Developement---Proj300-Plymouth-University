@@ -14,6 +14,8 @@ import time
 from datetime import datetime
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
+from mqtt_pub import connect_mqtt, publish as mqtt_pub
+
 # Grove Imports
 #from grove_light_sensor_v1_2 import GroveLightSensor
 #from grove_moisture_sensor import GroveMoistureSensor
@@ -35,20 +37,24 @@ GPIO.output(PIN, 0)         # Set GPIO to Low
 # Connect sensors to appropriate slots on hat
 light_Pin = 0
 moisture_Pin = 2
-
 # Define what grove sensor will be used
-moisture = AdcSensor(moisture_Pin)  # using this to test different voltage readout
-light = AdcSensor(light_Pin)        # using light sensor while developing code is easier to test
+moisture = AdcSensor(moisture_Pin)
+light = AdcSensor(light_Pin)
+
+# MQTT connect the publisher to the Broker
+client = connect_mqtt()
+#Start the network loop - opens in it's own thread
+client.loop_start()
 
 # Set the file path and the headers for the CSV file
-file_path = '../Smart-Plant-Incubator-Code/sensor_log.csv'
+file_path = '/home/auzon/Documents/Smart-Plant-Incubator-Code/sensor_log.csv'
 headers = ["Moisture Level", "Light Levels", "Time in s", "Time of Day", "Date"]
 
 # Check if the file exists
 if os.path.exists(file_path):
-    print("File already present, adding to current file")
+    print("Sensor log file already present, adding to current file")
 if not os.path.exists(file_path):
-    print("File not present, creating file...")
+    print("Sensor log file not present, creating file...")
     # If the file doesn't exist, create it and write the headers to it
     with open(file_path, 'w', newline='') as file:
         csv_writer = csv.writer(file)
@@ -85,6 +91,8 @@ try:
             print('Time Elapsed: {0}s'.format(round(t1)))
             print('Moisture value: {0}V'.format(m))
             print('Light value: {0}V'.format(light.adc_sensor))
+            mqtt_pub(client, "incubator/light", light.adc_sensor)
+            mqtt_pub(client, "incubator/moisture", moisture.adc_sensor)
             
             # Start writing data stream to data file.
             with open(file_path, 'a', newline='') as file:
@@ -96,6 +104,10 @@ try:
 except KeyboardInterrupt:
     print('\nTest Terminated by User, Closing Program...')
 
+# MQTT stop network loop
+client.loop_stop()
+
+# Reset GPIO pins
 GPIO.output(PIN, 0) # Set GPIO pin low
 GPIO.cleanup        # GPIO Clean Up (rests all pins to a neutral state)
 

@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+ #HomeAssistant
+ homeassistant:
+    container_name: homeassistant
+    image: "ghcr.io/home-assistant/home-assistant:stable"
+    volumes:
+      - /home/auzon/Documents/HomeAssistant:/config
+      - /etc/localtime:/etc/localtime:ro
+      - /run/dbus:/run/dbus:ro
+    restart: unless-stopped
+    privileged: true
+    network_mode: host
+
+ #Mosquitto MQTT
+ mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+    - /home/auzon/Documents/mosquitto/config:/mosquitto/config:rw
+    - /home/auzon/Documents/mosquitto/data:/mosquitto/data:rw
+    - /home/auzon/Documents/mosquitto/log:/mosquitto/log:rw
+    restart: unless-stopped
+
+volumes:
+  config:
+  data:
+  log:
+
+networks:
+  default:
+    name: mosquitto-network

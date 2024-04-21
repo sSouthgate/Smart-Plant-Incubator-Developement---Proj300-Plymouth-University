@@ -1,0 +1,22 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+mqtt:
+ sensor:
+ - name: "Incubator Light Level"
+   state_topic: "incubator/light"
+   icon: mdi:sprout
+ 
+ - name: "Incubator Moisture"
+   state_topic: "incubator/moisture"
+   icon: mdi:sprout
+   unit_of_measurement: "V"

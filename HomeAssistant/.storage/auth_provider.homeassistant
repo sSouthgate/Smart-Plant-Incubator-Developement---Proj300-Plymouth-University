@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "auzon",
+        "password": "JDJiJDEyJHZ6OWs0WmVLeEpFQmgyTjVEZG85ZE9qR0VXUTdIUkU5VDJrYXNhMUZ1SXFKYW5wQWJNNHJt"
+      }
+    ]
+  }
+}

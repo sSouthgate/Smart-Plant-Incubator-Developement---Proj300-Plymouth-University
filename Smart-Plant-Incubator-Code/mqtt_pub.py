@@ -4,15 +4,14 @@ import random
 from adc_sensor import AdcSensor
 
 # Define Broker Parameters
+
+# Broker Address
 broker = "localhost"
 port = 1883
-#topic = "incubator/moisture"
 client_id = 'publish-1'
+# Broker Credentials
 username = "auzon"
 password = "2203"
-
-# Define Sensor
-moisture = AdcSensor(2)
 
 def connect_mqtt():
     def on_connect(client, userdata, flags, rc, properties):
@@ -28,8 +27,6 @@ def connect_mqtt():
     return client
 
 def publish(client, topic, msg):
-    #time.sleep(1)
-    #msg = f"messages: {msg_count} light: {light.adc_sensor}"
     result = client.publish(topic, msg)
     # result: [0, 1]
     status = result[0]
@@ -48,4 +45,3 @@ if __name__ == "__main__":
     topic = "topic/test"
     msg = random.randint(0,10)
     run(topic, msg)
-    

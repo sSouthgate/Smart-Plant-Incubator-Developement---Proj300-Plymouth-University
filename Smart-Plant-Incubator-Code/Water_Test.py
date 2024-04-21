@@ -45,6 +45,9 @@ light = AdcSensor(light_Pin)
 client = mqtt_pub.connect_mqtt()
 #Start the network loop - opens in it's own thread
 client.loop_start()
+# MQTT topics to publish to
+moisture_topic = "incubator/moisture"
+light_topic = "incubator/light"
 
 # Set the file path and the headers for the CSV file
 file_path = '/home/auzon/Documents/Smart-Plant-Incubator-Code/sensor_log.csv'
@@ -83,21 +86,21 @@ try:
             t1 = time.time()                                # Define t1 as current time in seconds
             t1 = t1 - t0                                    # Substract t1(current time in s) from t0(Start time in s of program)
             
+            # Load data into variables so that data is consistent across platforms
             m = moisture.adc_sensor
-            #m = (3300 / 4095) * m
-            #m = round(m / 1000,2)
+            l = light.adc_sensor
 
             # Print info to terminal for inspection
             print('Time Elapsed: {0}s'.format(round(t1)))
             print('Moisture value: {0}V'.format(m))
-            print('Light value: {0}V'.format(light.adc_sensor))
-            mqtt_pub.publish(client, "incubator/light", light.adc_sensor)
-            mqtt_pub.publish(client, "incubator/moisture", moisture.adc_sensor)
+            print('Light value: {0}V'.format(l))
+            mqtt_pub.publish(client, moisture_topic, m)
+            mqtt_pub.publish(client, light_topic, l)
             
             # Start writing data stream to data file.
             with open(file_path, 'a', newline='') as file:
                 writer = csv.writer(file)                       
-                writer.writerow([m,light.adc_sensor,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
+                writer.writerow([m,l,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
                 time.sleep(1)
 
 # When Ctrl+C is input do this:

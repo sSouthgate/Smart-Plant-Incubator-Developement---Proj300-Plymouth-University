@@ -98,9 +98,9 @@
         "version": 1,
         "minor_version": 1,
         "domain": "mqtt",
-        "title": "172.20.0.2",
+        "title": "localhost",
         "data": {
-          "broker": "172.20.0.2",
+          "broker": "localhost",
           "port": 1883,
           "username": "auzon",
           "password": "2203",

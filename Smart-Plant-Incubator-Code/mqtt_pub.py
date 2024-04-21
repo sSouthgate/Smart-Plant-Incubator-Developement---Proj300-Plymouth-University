@@ -1,5 +1,6 @@
 import paho.mqtt.client as mqtt
 import time
+import random
 from adc_sensor import AdcSensor
 
 # Define Broker Parameters
@@ -44,7 +45,7 @@ def run(topic, msg):
     client.loop_stop()
 
 if __name__ == "__main__":
-    topic = "incubator/moisture"
-    msg = moisture.adc_sensor
+    topic = "topic/test"
+    msg = random.randint(0,10)
     run(topic, msg)
     

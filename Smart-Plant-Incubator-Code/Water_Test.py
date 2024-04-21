@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
-from mqtt_pub import connect_mqtt, publish as mqtt_pub
+import mqtt_pub
 
 # Grove Imports
 #from grove_light_sensor_v1_2 import GroveLightSensor
@@ -42,7 +42,7 @@ moisture = AdcSensor(moisture_Pin)
 light = AdcSensor(light_Pin)
 
 # MQTT connect the publisher to the Broker
-client = connect_mqtt()
+client = mqtt_pub.connect_mqtt()
 #Start the network loop - opens in it's own thread
 client.loop_start()
 
@@ -91,8 +91,8 @@ try:
             print('Time Elapsed: {0}s'.format(round(t1)))
             print('Moisture value: {0}V'.format(m))
             print('Light value: {0}V'.format(light.adc_sensor))
-            mqtt_pub(client, "incubator/light", light.adc_sensor)
-            mqtt_pub(client, "incubator/moisture", moisture.adc_sensor)
+            mqtt_pub.publish(client, "incubator/light", light.adc_sensor)
+            mqtt_pub.publish(client, "incubator/moisture", moisture.adc_sensor)
             
             # Start writing data stream to data file.
             with open(file_path, 'a', newline='') as file:

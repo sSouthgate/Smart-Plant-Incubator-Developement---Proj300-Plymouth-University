@@ -35,6 +35,7 @@ def publish(client, topic, msg):
     else:
         print(f"Failed to send message to topic {topic}")
 
+
 def run(topic, msg):
     client = connect_mqtt()
     client.loop_start()

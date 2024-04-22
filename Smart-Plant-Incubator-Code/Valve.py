@@ -38,7 +38,6 @@ def avg_moisture():
 
     # Get the average of the moisture value over 1 hour
     m = m / n
-    
     # Round m to 2 decimal points for consistency with adc_sensor class.
     m = round(m, 2)
     

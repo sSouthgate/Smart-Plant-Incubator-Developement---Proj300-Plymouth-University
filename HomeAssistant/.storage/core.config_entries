@@ -112,12 +112,7 @@
             "qos": 0,
             "retain": false
           },
-          "will_message": {
-            "topic": "homeassistant/status",
-            "payload": "offline",
-            "qos": 0,
-            "retain": false
-          }
+          "will_message": {}
         },
         "options": {},
         "pref_disable_new_entities": false,

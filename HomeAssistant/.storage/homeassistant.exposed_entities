@@ -39,6 +39,20 @@
             "should_expose": false
           }
         }
+      },
+      "number.incubator_valve_threshold": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "number.incubator_light_threshold": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
       }
     }
   }

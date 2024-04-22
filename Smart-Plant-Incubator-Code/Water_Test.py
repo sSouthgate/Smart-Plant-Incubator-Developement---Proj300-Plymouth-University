@@ -14,7 +14,7 @@ import time
 from datetime import datetime
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
-import mqtt_pub
+import mqtt_pub_sub as mqtt
 
 # Grove Imports
 #from grove_light_sensor_v1_2 import GroveLightSensor
@@ -41,13 +41,19 @@ moisture_Pin = 2
 moisture = AdcSensor(moisture_Pin)
 light = AdcSensor(light_Pin)
 
-# MQTT connect the publisher to the Broker
-client = mqtt_pub.connect_mqtt()
+# MQTT connect the client to the Broker
+sensor_client = mqtt.connect_mqtt("pub_sensor")
+water_client = mqtt.connect_mqtt("sub_water")
+light_client = mqtt.connect_mqtt("sub_light")
 #Start the network loop - opens in it's own thread
-client.loop_start()
+sensor_client.loop_start()
+water_client.loop_start()
+light_client.loop_start()
 # MQTT topics to publish to
-moisture_topic = "incubator/moisture"
-light_topic = "incubator/light"
+moisture_topic = "incubator/moisture/value"
+light_topic = "incubator/light/value"
+moisture_thresh_topic = "incubator/moisture/threshold"
+light_thresh_topic = "incubator/light/threshold"
 
 # Set the file path and the headers for the CSV file
 file_path = '/home/auzon/Documents/Smart-Plant-Incubator-Code/sensor_log.csv'
@@ -86,6 +92,13 @@ try:
             t1 = time.time()                                # Define t1 as current time in seconds
             t1 = t1 - t0                                    # Substract t1(current time in s) from t0(Start time in s of program)
             
+            
+
+            # moist_thresh = mqtt.connect_mqtt("sub_water")[1]
+            # light_thresh = mqtt.connect_mqtt("sub_light")[1]
+            # print(str(moist_thresh.decode("utf-8")))
+            # print(str(light_thresh.decode("utf-8")))
+
             # Load data into variables so that data is consistent across platforms
             m = moisture.adc_sensor
             l = light.adc_sensor
@@ -94,8 +107,8 @@ try:
             print('Time Elapsed: {0}s'.format(round(t1)))
             print('Moisture value: {0}V'.format(m))
             print('Light value: {0}V'.format(l))
-            mqtt_pub.publish(client, moisture_topic, m)
-            mqtt_pub.publish(client, light_topic, l)
+            mqtt.publish(sensor_client, moisture_topic, m)
+            mqtt.publish(sensor_client, light_topic, l)
             
             # Start writing data stream to data file.
             with open(file_path, 'a', newline='') as file:
@@ -107,8 +120,9 @@ try:
 except KeyboardInterrupt:
     print('\nTest Terminated by User, Closing Program...')
 
-# MQTT stop network loop
-client.loop_stop()
+sensor_client.loop_stop()
+water_client.loop_stop()
+light_client.loop_stop()
 
 # Reset GPIO pins
 GPIO.output(PIN, 0) # Set GPIO pin low

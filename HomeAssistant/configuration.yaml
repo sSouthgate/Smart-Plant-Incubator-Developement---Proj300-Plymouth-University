@@ -13,10 +13,28 @@ scene: !include scenes.yaml
 mqtt:
  sensor:
  - name: "Incubator Light Level"
-   state_topic: "incubator/light"
+   state_topic: "incubator/light/value"
+   unit_of_measurement: "V"
    icon: mdi:sprout
  
  - name: "Incubator Moisture"
-   state_topic: "incubator/moisture"
-   icon: mdi:sprout
+   state_topic: "incubator/moisture/value"
    unit_of_measurement: "V"
+   icon: mdi:sprout
+
+ number:
+  - name: "Incubator Valve Threshold"
+    command_topic: "incubator/moisture/threshold"
+    icon: mdi:water-percent
+    device_class: "moisture"
+    min: 0.01
+    max: 2.28
+    retain: True
+
+  - name: "Incubator Light Threshold"
+    command_topic: "incubator/light/threshold"
+    icon: mdi:brightness-6
+    device_class: "illuminance"
+    min: 0.01
+    max: 2.28
+    retain: True

@@ -30,7 +30,7 @@ class AdcSensor:
     def adc_percent(self):
         '''
         Read the ADC value - 
-        Divide the value by the maximum ADC Value (4095) times 100.
+        Divide the value by the maximum *OBSERVED* ADC Value (3235) times 100.
         Returns:
             (int): voltage%
         '''
@@ -39,6 +39,19 @@ class AdcSensor:
         value = round(value, 2)
         return value
     
+    @property
+    def real_adc_percent(self):
+        '''
+        Read the ADC value - 
+        Divide the value by the maximum ADC Value (4095) times 100.
+        Returns:
+            (int): voltage%
+        '''
+        value = self.adc.read_raw(self.channel)
+        value = (value / 4095) * 100
+        value = round(value, 2)
+        return value
+
     @property
     def adc_raw(self):
 
@@ -52,6 +65,7 @@ def main():
     from helper import SlotHelper
     sh = SlotHelper(SlotHelper.ADC)
     pin = sh.argv2pin()
+    #pin = 0    # This is for debugging - comment out the above line
 
     sensor = AdcSensor(pin)
 

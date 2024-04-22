@@ -6,20 +6,105 @@
     "config": {
       "views": [
         {
-          "title": "Home",
-          "cards": [
+          "type": "sections",
+          "max_columns": 4,
+          "subview": true,
+          "sections": [
             {
-              "type": "entities",
-              "entities": [
-                "number.incubator_light_threshold",
-                "number.incubator_valve_threshold"
-              ],
-              "state_color": true,
-              "show_header_toggle": true
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "tile",
+                  "entity": "sensor.incubator_light_level"
+                },
+                {
+                  "type": "tile",
+                  "entity": "sensor.incubator_moisture"
+                },
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "entity": "sensor.incubator_light_level",
+                  "detail": 1
+                },
+                {
+                  "graph": "line",
+                  "type": "sensor",
+                  "entity": "sensor.incubator_moisture",
+                  "detail": 1
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "history-graph",
+                  "entities": [
+                    {
+                      "entity": "sensor.incubator_moisture"
+                    },
+                    {
+                      "entity": "sensor.incubator_light_level"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "features": [
+                    {
+                      "style": "slider",
+                      "type": "numeric-input"
+                    },
+                    {
+                      "type": "numeric-input",
+                      "style": "buttons"
+                    }
+                  ],
+                  "type": "tile",
+                  "entity": "number.incubator_valve_threshold",
+                  "color": "teal",
+                  "show_entity_picture": false,
+                  "vertical": false,
+                  "hide_state": false,
+                  "state_content": [
+                    "last-changed",
+                    "state"
+                  ]
+                },
+                {
+                  "features": [
+                    {
+                      "style": "slider",
+                      "type": "numeric-input"
+                    },
+                    {
+                      "style": "buttons",
+                      "type": "numeric-input"
+                    }
+                  ],
+                  "type": "tile",
+                  "entity": "number.incubator_light_threshold",
+                  "color": "accent",
+                  "show_entity_picture": false,
+                  "vertical": false,
+                  "hide_state": false,
+                  "state_content": [
+                    "last-changed",
+                    "state"
+                  ]
+                }
+              ]
             }
-          ]
+          ],
+          "cards": []
         }
-      ]
+      ],
+      "title": "Incubator Dashboard"
     }
   }
 }

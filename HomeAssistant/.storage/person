@@ -8,7 +8,9 @@
         "id": "auzon_apophis",
         "name": "Auzon Apophis",
         "user_id": "ab5bca5480284c549cb7cf77a69c3f24",
-        "device_trackers": []
+        "device_trackers": [
+          "device_tracker.auz_phone"
+        ]
       }
     ]
   }

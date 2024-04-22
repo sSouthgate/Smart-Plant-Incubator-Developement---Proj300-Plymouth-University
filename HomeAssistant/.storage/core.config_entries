@@ -120,6 +120,38 @@
         "source": "user",
         "unique_id": null,
         "disabled_by": null
+      },
+      {
+        "entry_id": "444f261225ec4c9db0c1140dd273f0c5",
+        "version": 1,
+        "minor_version": 1,
+        "domain": "mobile_app",
+        "title": "Auz-phone",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2024.4.1-full (12576)",
+          "device_name": "Auz-phone",
+          "manufacturer": "samsung",
+          "model": "SM-G975F",
+          "os_name": "Android",
+          "os_version": "31",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "d8rJojf1TnW6pyIFwDkx3s:APA91bEXnFhILhMaFTpvEnJkpgd6YEov3NzUqxIWqN4KTaCUT0prAHcQ1DiUq6bjjk68KT7mp05XLjGlz2FBZQfGBCuXWbyd282-gcggehfVNsp6aeHMII9zQXHhQYLyvmL5U2URaymO"
+          },
+          "device_id": "0b6fed50bea6dc5c",
+          "webhook_id": "46a25eca6b2e4311ab1c8a38a257d7dc5ad0ad0bfda705e71ae59d0d3b77da1d",
+          "user_id": "ab5bca5480284c549cb7cf77a69c3f24"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-0b6fed50bea6dc5c",
+        "disabled_by": null
       }
     ]
   }

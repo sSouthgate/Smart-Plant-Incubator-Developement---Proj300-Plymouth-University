@@ -120,6 +120,40 @@
         "expire_at": 1721573433.658739,
         "credential_id": "4c0e9829d69240ca9ce9b963b2cd1d57",
         "version": "2024.4.3"
+      },
+      {
+        "id": "7c5629a39a854cdb95b6afddcb0e9727",
+        "user_id": "ab5bca5480284c549cb7cf77a69c3f24",
+        "client_id": "https://home-assistant.io/android",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-04-22T21:50:40.628501+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "e2e1893ab4c0ad38381c8d6ab261fb13033da5ff10c57bccbe6329eacbd45f822c81d66bea5a92a88060b921708b58dce07b6e7d7bb185782668a77bddaeb860",
+        "jwt_key": "a2ff07eed135c98630bf7bd1740e30cd84d506e416e6f016d189800bff3742df19c9a3b7b3391c337a6dc7cfd506bca0841998901d15cc4ba79a1b428a9d5d12",
+        "last_used_at": "2024-04-22T21:50:40.628945+00:00",
+        "last_used_ip": "192.168.0.111",
+        "expire_at": 1721598640.628945,
+        "credential_id": "4c0e9829d69240ca9ce9b963b2cd1d57",
+        "version": "2024.4.3"
+      },
+      {
+        "id": "9600fd5c5b0543c2bee5a0abb1e153c1",
+        "user_id": "ab5bca5480284c549cb7cf77a69c3f24",
+        "client_id": "http://raspberrypi.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-04-22T21:54:31.111630+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "f9dd070d33d1b34135306c28c4b6b7b4fdb35459e39e86d3789ad1767dc69a9e9ea627233034b13a2869a62bd5f7cd8977ce46e6a772fea30c5570e6cf9def82",
+        "jwt_key": "ee8db1c9800156a67ffaff9741ee9c0c62d19f51e1a8d2861dca610f815a36f25f7a58ac730b475291e52639a40b5559b9bdc84e76097688966f6f02b19c6a04",
+        "last_used_at": "2024-04-22T21:54:31.111871+00:00",
+        "last_used_ip": "fe80::3f20:32e6:ea74:5613",
+        "expire_at": 1721598871.111871,
+        "credential_id": "4c0e9829d69240ca9ce9b963b2cd1d57",
+        "version": "2024.4.3"
       }
     ]
   }

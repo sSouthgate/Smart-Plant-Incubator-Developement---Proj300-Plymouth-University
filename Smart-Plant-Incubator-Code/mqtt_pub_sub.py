@@ -165,5 +165,3 @@ if __name__ == "__main__":
         print("Message from queue:", str(message.payload.decode("utf-8")))
         m = float(message.payload.decode("utf-8"))
         print(m)
-
-#Comment

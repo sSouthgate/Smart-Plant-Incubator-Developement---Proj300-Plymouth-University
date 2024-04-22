@@ -38,3 +38,4 @@ mqtt:
     min: 0.01
     max: 2.28
     retain: True
+    step: 0.1

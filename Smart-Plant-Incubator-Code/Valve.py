@@ -29,16 +29,16 @@ def avg_moisture():
         
         print('Loop nbr:',n)
         print('m =', m)
-        print('ADC =', moisture.adc_sensor)
-        m = m + moisture.adc_sensor
+        print('ADC =', moisture.adc_voltage)
+        m = m + moisture.adc_voltage
         n = n + 1
         time.sleep (60)
         print('Done a sleep')
-        print('after loop \n    m =',m,'\n  ADC =', moisture.adc_sensor)
+        print('after loop \n    m =',m,'\n  ADC =', moisture.adc_voltage)
 
     # Get the average of the moisture value over 1 hour
     m = m / n
-    # Round m to 2 decimal points for consistency with adc_sensor class.
+    # Round m to 2 decimal points for consistency with adc_voltage class.
     m = round(m, 2)
     
  # If loop logic dependent on moisture level set PIN high or low

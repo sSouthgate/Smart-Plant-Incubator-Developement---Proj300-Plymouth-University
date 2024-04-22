@@ -14,7 +14,7 @@ class AdcSensor:
         self.adc = ADC()
 
     @property
-    def adc_sensor(self):
+    def adc_voltage(self):
         '''
         Read the ADC value - 
         Divide the input Voltage(3.3V) by the maximum ADC Value (4095) times the ADC. Then devide by 1k.
@@ -25,6 +25,20 @@ class AdcSensor:
         value = (3300 / 4095) * value
         value = round(value/1000, 2)
         return value
+    
+    @property
+    def adc_percent(self):
+        '''
+        Read the ADC value - 
+        Divide the value by the maximum ADC Value (4095) times 100.
+        Returns:
+            (int): voltage%
+        '''
+        value = self.adc.read_raw(self.channel)
+        value = (value / 4095) * 100
+        value = round(value, 2)
+        return value
+
 
 #Grove = AdcSensor
 
@@ -37,7 +51,9 @@ def main():
 
     print('Reading voltage...')
     while True:
-        print('ADC value: {0}V'.format(sensor.adc_sensor))
+        print('ADC raw: {0}V'.format(ADC.read_raw))
+        print('ADC value: {0}V'.format(sensor.adc_voltage))
+        print('ADC value: {0}%'.format(sensor.adc_percent))
         time.sleep(1)
 
 if __name__ == '__main__':

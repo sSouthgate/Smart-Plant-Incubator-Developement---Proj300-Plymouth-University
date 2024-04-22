@@ -19,18 +19,18 @@ def light(PIN,L):
     GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
     GPIO.output(PIN, 0)         # Set GPIO to Low
     
-    # Define Moisture Sensor Pin Number
+    # Define Light Sensor Pin Number
     sensor = AdcSensor(0)
     
     while True:
-        if sensor.adc_sensor < L:
+        if sensor.adc_voltage < L:
             state = 'Low Light Levels, Turning On Lights'
-            print('Light Level: {0}, {1}'.format(sensor.adc_sensor, state))
+            print('Light Level: {0}, {1}'.format(sensor.adc_voltage, state))
             GPIO.output(PIN, 1)
             time.sleep(1)
         else:
             state = 'Light Levels Nominal, Turning Off Lights'
-            print('Light Level: {0}, {1}'.format(sensor.adc_sensor, state))
+            print('Light Level: {0}, {1}'.format(sensor.adc_voltage, state))
             GPIO.output(PIN, 0)
             time.sleep(1)
 

@@ -1,30 +1,33 @@
 # IMPORTS
-import csv
-import os
 import time
 from datetime import datetime
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
-import mqtt_pub
+import mqtt_pub_sub as mqtt
 
 # SETUP RPi GPIO
-led_pin = 32                # RPi pin for the LED MOSFET
-valve_pin = 36              # RPi pin for the Valve MOSFET
+led_GPIO = 32                # RPi pin for the LED MOSFET
+valve_GPIO = 36              # RPi pin for the Valve MOSFET
 GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
-GPIO.setup(led_pin, valve_pin, GPIO.OUT)   # Set GPIO Pin mode to output
-GPIO.output(led_pin, valve_pin, 0)         # Set GPIO to Low
+GPIO.setup(led_GPIO, valve_GPIO, GPIO.OUT)   # Set GPIO Pin mode to output
+GPIO.output(led_GPIO, valve_GPIO, 0)         # Set GPIO to Low
 
-# Connect sensors to appropriate slots on hat
-light_pin = 0
-moisture_pin = 2
-# Define what grove sensor will be used
-moisture = AdcSensor(moisture_pin)
-light = AdcSensor(light_pin)
+# MQTT connect the clients to the Broker
+sensor_client = mqtt.connect_mqtt("pub_sensor")
+water_client = mqtt.connect_mqtt("sub_water")
+light_client = mqtt.connect_mqtt("sub_light")
 
-# MQTT connect the publisher to the Broker
-client = mqtt_pub.connect_mqtt()
-#Start the network loop - opens in it's own thread
-client.loop_start()
-# MQTT topics to publish to
-moisture_topic = "incubator/moisture"
-light_topic = "incubator/light"
+# Start the network loop - opens in it's own thread
+sensor_client.loop_start()
+water_client.loop_start()
+light_client.loop_start()
+
+# MQTT topics
+moist_state_topic = "incubator/moisture/value"
+light_state_topic = "incubator/light/value"
+moist_th_topic = "incubator/moisture/threshold"
+light_th_topic = "incubator/light/threshold"
+
+# MQTT Subscribing client to defined topic
+mqtt.subscribe(water_client, moist_th_topic)
+mqtt.subscribe(light_client, moist_th_topic)

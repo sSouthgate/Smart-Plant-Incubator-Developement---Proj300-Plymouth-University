@@ -101,8 +101,8 @@ try:
             print(m_th)
 
             # Load data into variables so that data is consistent across platforms
-            m = moisture.adc_sensor
-            l = light.adc_sensor
+            m = moisture.adc_voltage
+            l = light.adc_voltage
 
             # Print info to terminal for inspection
             print('Time Elapsed: {0}s'.format(round(t1)))

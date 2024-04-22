@@ -103,6 +103,23 @@
         "expire_at": 1721519507.21729,
         "credential_id": "4c0e9829d69240ca9ce9b963b2cd1d57",
         "version": "2024.4.3"
+      },
+      {
+        "id": "f81072b294744fdabee8f4a613cb4da1",
+        "user_id": "ab5bca5480284c549cb7cf77a69c3f24",
+        "client_id": "http://raspberrypi.local:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2024-04-22T09:05:34.996531+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "27eabfa6fafacc7278eadc423935be64b01316e9ecb20f58340d75757edeb09afff5cadde5b1d01d57d370fbd569b554abc538d204724370e1340c7857aae409",
+        "jwt_key": "5f1803e1ba6b497923f47baf951cd9a6731cdeaf9a93221b7b416cbd387827a956b3a60bc5d048a100ece20ab2d022c5ece3b22a00e95ce1338d89731fbc1660",
+        "last_used_at": "2024-04-22T13:27:55.361208+00:00",
+        "last_used_ip": "192.168.137.1",
+        "expire_at": 1721568475.361208,
+        "credential_id": "4c0e9829d69240ca9ce9b963b2cd1d57",
+        "version": "2024.4.3"
       }
     ]
   }

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_test",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "number.incubator_light_threshold",
+                "number.incubator_valve_threshold"
+              ],
+              "state_color": true,
+              "show_header_toggle": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

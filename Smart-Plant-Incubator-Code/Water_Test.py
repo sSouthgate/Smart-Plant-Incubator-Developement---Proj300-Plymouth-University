@@ -55,9 +55,14 @@ light_topic = "incubator/light/value"
 moisture_thresh_topic = "incubator/moisture/threshold"
 light_thresh_topic = "incubator/light/threshold"
 
+# MQTT SUBS
+mqtt.subscribe(water_client, moisture_thresh_topic)
+mqtt.subscribe(light_client, moisture_thresh_topic)
+
 # Set the file path and the headers for the CSV file
 file_path = '/home/auzon/Documents/Smart-Plant-Incubator-Code/sensor_log.csv'
 headers = ["Moisture Level", "Light Levels", "Time in s", "Time of Day", "Date"]
+
 
 # Check if the file exists
 if os.path.exists(file_path):
@@ -92,12 +97,8 @@ try:
             t1 = time.time()                                # Define t1 as current time in seconds
             t1 = t1 - t0                                    # Substract t1(current time in s) from t0(Start time in s of program)
             
-            
-
-            # moist_thresh = mqtt.connect_mqtt("sub_water")[1]
-            # light_thresh = mqtt.connect_mqtt("sub_light")[1]
-            # print(str(moist_thresh.decode("utf-8")))
-            # print(str(light_thresh.decode("utf-8")))
+            m_th = mqtt.get_payload(mqtt.water_q)
+            print(m_th)
 
             # Load data into variables so that data is consistent across platforms
             m = moisture.adc_sensor

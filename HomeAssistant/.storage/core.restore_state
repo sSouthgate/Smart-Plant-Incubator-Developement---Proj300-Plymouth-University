@@ -4,28 +4,33 @@
   "key": "core.restore_state",
   "data": [
     {
-      "state": {"entity_id":"person.auzon_apophis","state":"unknown","attributes":{"editable":true,"id":"auzon_apophis","user_id":"ab5bca5480284c549cb7cf77a69c3f24","device_trackers":[],"friendly_name":"Auzon Apophis"},"last_changed":"2024-04-22T14:53:14.704205+00:00","last_reported":"2024-04-22T14:53:36.093027+00:00","last_updated":"2024-04-22T14:53:36.093027+00:00","context":{"id":"01HW34RMEX43FF1R6FX0QEE4Z6","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"person.auzon_apophis","state":"unknown","attributes":{"editable":true,"id":"auzon_apophis","user_id":"ab5bca5480284c549cb7cf77a69c3f24","device_trackers":[],"friendly_name":"Auzon Apophis"},"last_changed":"2024-04-22T17:56:48.401154+00:00","last_reported":"2024-04-22T17:58:10.542450+00:00","last_updated":"2024-04-22T17:58:10.542450+00:00","context":{"id":"01HW3FAKBETRFVKB5TWZR050SG","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-04-22T14:53:36.098166+00:00"
+      "last_seen": "2024-04-22T18:28:10.545444+00:00"
     },
     {
-      "state": {"entity_id":"sensor.incubator_light_level","state":"unknown","attributes":{"unit_of_measurement":"V","icon":"mdi:sprout","friendly_name":"Incubator Light Level"},"last_changed":"2024-04-22T14:53:35.667923+00:00","last_reported":"2024-04-22T14:53:35.667923+00:00","last_updated":"2024-04-22T14:53:35.667923+00:00","context":{"id":"01HW34RM1K5R2W6CPTSCNXZNJX","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"tts.google_en_com","state":"unknown","attributes":{"friendly_name":"Google en com"},"last_changed":"2024-04-22T17:56:57.353197+00:00","last_reported":"2024-04-22T17:56:57.353197+00:00","last_updated":"2024-04-22T17:56:57.353197+00:00","context":{"id":"01HW3F8BW97XACQ25ZHDP6F7RG","parent_id":null,"user_id":null}},
+      "extra_data": null,
+      "last_seen": "2024-04-22T18:28:10.545444+00:00"
+    },
+    {
+      "state": {"entity_id":"sensor.incubator_light_level","state":"0.0","attributes":{"unit_of_measurement":"V","icon":"mdi:sprout","friendly_name":"Incubator Light Level"},"last_changed":"2024-04-22T18:02:55.576687+00:00","last_reported":"2024-04-22T18:02:55.576687+00:00","last_updated":"2024-04-22T18:02:55.576687+00:00","context":{"id":"01HW3FK9PRBNXC3KSBH487VZ35","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": null,
+        "native_value": "0.0",
         "native_unit_of_measurement": "V"
       },
-      "last_seen": "2024-04-22T14:53:36.098166+00:00"
+      "last_seen": "2024-04-22T18:28:10.545444+00:00"
     },
     {
-      "state": {"entity_id":"sensor.incubator_moisture","state":"unknown","attributes":{"unit_of_measurement":"V","icon":"mdi:sprout","friendly_name":"Incubator Moisture"},"last_changed":"2024-04-22T14:53:35.703465+00:00","last_reported":"2024-04-22T14:53:35.703465+00:00","last_updated":"2024-04-22T14:53:35.703465+00:00","context":{"id":"01HW34RM2QN1TZH3KEV6K0KB3R","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.incubator_moisture","state":"0.0","attributes":{"unit_of_measurement":"V","icon":"mdi:sprout","friendly_name":"Incubator Moisture"},"last_changed":"2024-04-22T18:02:55.475886+00:00","last_reported":"2024-04-22T18:02:55.475886+00:00","last_updated":"2024-04-22T18:02:55.475886+00:00","context":{"id":"01HW3FK9KKF25ESYKV9K0EFXXG","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": null,
+        "native_value": "0.0",
         "native_unit_of_measurement": "V"
       },
-      "last_seen": "2024-04-22T14:53:36.098166+00:00"
+      "last_seen": "2024-04-22T18:28:10.545444+00:00"
     },
     {
-      "state": {"entity_id":"number.incubator_valve_threshold","state":"0.01","attributes":{"min":0.01,"max":2.28,"step":1.0,"mode":"auto","assumed_state":true,"device_class":"moisture","icon":"mdi:water-percent","friendly_name":"Incubator Valve Threshold"},"last_changed":"2024-04-22T14:53:35.740448+00:00","last_reported":"2024-04-22T14:53:35.740448+00:00","last_updated":"2024-04-22T14:53:35.740448+00:00","context":{"id":"01HW34RM3W52WVZM1YXDG68H81","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"number.incubator_valve_threshold","state":"0.01","attributes":{"min":0.01,"max":2.28,"step":1.0,"mode":"auto","assumed_state":true,"device_class":"moisture","icon":"mdi:water-percent","friendly_name":"Incubator Valve Threshold"},"last_changed":"2024-04-22T17:56:57.575768+00:00","last_reported":"2024-04-22T17:56:57.575768+00:00","last_updated":"2024-04-22T17:56:57.575768+00:00","context":{"id":"01HW3F8C37PQ236CDJ6X7C6E60","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_max_value": 2.28,
         "native_min_value": 0.01,
@@ -33,10 +38,10 @@
         "native_unit_of_measurement": null,
         "native_value": 0.01
       },
-      "last_seen": "2024-04-22T14:53:36.098166+00:00"
+      "last_seen": "2024-04-22T18:28:10.545444+00:00"
     },
     {
-      "state": {"entity_id":"number.incubator_light_threshold","state":"0.01","attributes":{"min":0.01,"max":2.28,"step":0.1,"mode":"auto","assumed_state":true,"device_class":"illuminance","icon":"mdi:brightness-6","friendly_name":"Incubator Light Threshold"},"last_changed":"2024-04-22T14:53:35.750206+00:00","last_reported":"2024-04-22T14:53:35.750206+00:00","last_updated":"2024-04-22T14:53:35.750206+00:00","context":{"id":"01HW34RM46HJZP0MR3VAGMJ5GB","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"number.incubator_light_threshold","state":"0.01","attributes":{"min":0.01,"max":2.28,"step":0.1,"mode":"auto","assumed_state":true,"device_class":"illuminance","icon":"mdi:brightness-6","friendly_name":"Incubator Light Threshold"},"last_changed":"2024-04-22T17:56:57.577378+00:00","last_reported":"2024-04-22T17:56:57.577378+00:00","last_updated":"2024-04-22T17:56:57.577378+00:00","context":{"id":"01HW3F8C39MFVN2K47D9ASA32P","parent_id":null,"user_id":null}},
       "extra_data": {
         "native_max_value": 2.28,
         "native_min_value": 0.01,
@@ -44,12 +49,7 @@
         "native_unit_of_measurement": null,
         "native_value": 0.01
       },
-      "last_seen": "2024-04-22T14:53:36.098166+00:00"
-    },
-    {
-      "state": {"entity_id":"tts.google_en_com","state":"unknown","attributes":{"friendly_name":"Google en com"},"last_changed":"2024-04-22T14:53:35.822375+00:00","last_reported":"2024-04-22T14:53:35.822375+00:00","last_updated":"2024-04-22T14:53:35.822375+00:00","context":{"id":"01HW34RM6ED417XC4YJTG8QJWB","parent_id":null,"user_id":null}},
-      "extra_data": null,
-      "last_seen": "2024-04-22T14:53:36.098166+00:00"
+      "last_seen": "2024-04-22T18:28:10.545444+00:00"
     },
     {
       "state": {"entity_id":"sensor.incubator_light","state":"unknown","attributes":{"icon":"mdi:sprout","friendly_name":"Incubator Light"},"last_changed":"2024-04-21T09:44:35.925684+00:00","last_reported":"2024-04-21T09:44:35.935236+00:00","last_updated":"2024-04-21T09:44:35.925684+00:00","context":{"id":"01HW00P3TNF25ESYKV9K0EFXXG","parent_id":null,"user_id":null}},

@@ -35,8 +35,14 @@ class AdcSensor:
             (int): voltage%
         '''
         value = self.adc.read_raw(self.channel)
-        value = (value / 4095) * 100
+        value = (value / 3235) * 100
         value = round(value, 2)
+        return value
+    
+    @property
+    def adc_raw(self):
+
+        value = self.adc.read_raw(self.channel)
         return value
 
 
@@ -51,7 +57,7 @@ def main():
 
     print('Reading voltage...')
     while True:
-        print('ADC raw: {0}V'.format(ADC.read_raw))
+        print('ADC raw: {0}'.format(sensor.adc_raw))
         print('ADC value: {0}V'.format(sensor.adc_voltage))
         print('ADC value: {0}%'.format(sensor.adc_percent))
         time.sleep(1)

@@ -14,12 +14,12 @@ mqtt:
  sensor:
  - name: "Incubator Light Level"
    state_topic: "incubator/light/value"
-   unit_of_measurement: "V"
+   unit_of_measurement: "%"
    icon: mdi:sprout
  
  - name: "Incubator Moisture"
    state_topic: "incubator/moisture/value"
-   unit_of_measurement: "V"
+   unit_of_measurement: "%"
    icon: mdi:sprout
 
  number:
@@ -28,7 +28,8 @@ mqtt:
     icon: mdi:water-percent
     device_class: "moisture"
     min: 0.01
-    max: 2.28
+    max: 100
+    step: 1
     retain: True
 
   - name: "Incubator Light Threshold"
@@ -36,6 +37,6 @@ mqtt:
     icon: mdi:brightness-6
     device_class: "illuminance"
     min: 0.01
-    max: 2.28
+    max: 100
+    step: 1
     retain: True
-    step: 0.1

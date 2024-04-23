@@ -13,7 +13,10 @@ GPIO.setup(Valve, GPIO.OUT)
 GPIO.output(Light, False)
 GPIO.output(Valve, False)
 
+time.sleep(3)
+
 GPIO.output(Light, True)
+time.sleep(3)
 GPIO.output(Valve, True)
 print(GPIO.input(Light), GPIO.input(Valve))
 time.sleep(1)

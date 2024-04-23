@@ -3,33 +3,31 @@ import time
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
 
-def avg_moisture():
+def avg_moisture(x):
     '''
-    Incubator Valve Control
-    Args
-        PIN(int): RPi GPIO Pin connected to Valve circuit MOSFET
-        S(int) : Time that valve remains open in secondss
+    Avg moisture over x minutes
+    Returns m in V
     '''
     # Define Moisture Sensor Pin Number
     moisture = AdcSensor(2)
-    # Variable for while loop
+    # Number of loops in average functions
     n = 0
     # ADC value stored in m
     m = 0
+    #Define time variables
+    t0 = time.time()    #current time
+    t1 = 0              #set to 0
 
-    #Loop over 60 iterations and sleep for 60 seconds in each loop - an hour worth of data
-    while (n < 60) :
-        
-        # print('Loop nbr:',n)
-        # print('m =', m)
-        # print('ADC =', moisture.adc_voltage)
-        m = m + moisture.adc_voltage
+    # Loop for x minutues and sleep x seconds in each loop
+    while (t1 < (t0 + (x *60))) :
+        #Count the amount of loops to make an average
         n = n + 1
-        time.sleep (60)
-        # print('Done a sleep')
-        # print('after loop \n    m =',m,'\n  ADC =', moisture.adc_voltage)
+        t1 = time.time()    #current time
+        m = m + moisture.adc_voltage
+        #Sleep to help with power managment
+        time.sleep (x)
 
-    # Get the average of the moisture value over 1 hour
+    # Get the average of the moisture value over x minutes
     m = m / n
     # Round m to 2 decimal points for consistency with adc_voltage class.
     m = round(m, 2)
@@ -37,10 +35,43 @@ def avg_moisture():
     return m
 
 
-def open_valve(m, threshhold, GPIO_pin):
+def avg_moisture_percent(x):
+    '''
+    Avg moisture over x minutes
+    Returns m in % (see adc_percent)
+    '''
+    # Define Moisture Sensor Pin Number
+    moisture = AdcSensor(2)
+    # Number of loops in average functions
+    n = 0
+    # ADC value stored in m
+    m = 0
+    #Define time variables
+    t0 = time.time()    #current time
+    t1 = 0              #set to 0
+
+    # Loop for x minutues and sleep x seconds in each loop
+    while (t1 < (t0 + (x *60))) :
+        #Count the amount of loops to make an average
+        n = n + 1
+        t1 = time.time()    #current time
+        m = m + moisture.adc_percent
+        print(m)
+        #Sleep to help with power managment
+        time.sleep (x)
+
+    # Get the average of the moisture value over x minutes
+    m = m / n
+    # Round m to 2 decimal points for consistency with adc_voltage class.
+    m = round(m, 2)
+    # Return the Value stored in m
+    return m
+
+
+def valve_control(m, threshhold, GPIO_pin):
     '''
     After data manipulation -
-    Set the valve GPIO Pin high to open the valve
+    Set the valve GPIO Pin high to open the valve for the required time
     '''
     if m < threshhold:
         GPIO.output(GPIO_pin, 1)
@@ -54,16 +85,20 @@ def open_valve(m, threshhold, GPIO_pin):
         time.sleep(1)
         GPIO.output(GPIO_pin, 0)
         print('Water Dispensed, Valve Closed')
-    else: #m < 2.4:
+    else:
         GPIO.output(GPIO_pin, 0)
         state = 'Soil is moist - No need to water'
         print('Moisture Level: {0}, {1}'.format(m, state))
-    # else:
-    #     GPIO.output(GPIO_pin, 0)
-    #     state = 'PLANT IS OVERWATERED!!!!'
-    #     print('Moisture Level: {0}, {1}'.format(m,state))
     
+def moisture_routine(threshold, x, GPIO_pin):
+    '''Function to be run on a thread for valve functionality
+    Based on avg_moisture_percent over x minutes, deliver the required water amount
+    '''
+    m = avg_moisture_percent(x)
+    valve_control(m, threshold, GPIO_pin)
+
 
 if __name__ == '__main__':
-   m = avg_moisture()
-   open_valve(m, 50, 18)
+   m = avg_moisture_percent(1)
+   print(m)
+   #valve_control(m, 50, 36)

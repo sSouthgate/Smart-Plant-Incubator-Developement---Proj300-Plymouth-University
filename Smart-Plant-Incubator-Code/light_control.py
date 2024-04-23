@@ -87,24 +87,23 @@ def light_control(l, threshold, GPIO_pin):
     # Define Light Sensor Pin Number
     sensor = AdcSensor(0)
     
-    while True:
-        if sensor.adc_voltage < l:
-            state = 'Low Light Levels, Turning On Lights'
-            print('Light Level: {0}, {1}'.format(sensor.adc_voltage, state))
-            GPIO.output(GPIO_pin, 1)
-            time.sleep(1)
-        else:
-            state = 'Light Levels Nominal, Turning Off Lights'
-            print('Light Level: {0}, {1}'.format(sensor.adc_voltage, state))
-            GPIO.output(GPIO_pin, 0)
-            time.sleep(1)
+    if l < threshold:
+        state = 'Low Light Levels, Turning On Lights'
+        print('Light Level: {0}, {1}'.format(sensor.adc_voltage, state))
+        GPIO.output(GPIO_pin, 1)
+        time.sleep(1)
+    else:
+        state = 'Light Levels Nominal, Turning Off Lights'
+        print('Light Level: {0}, {1}'.format(sensor.adc_voltage, state))
+        GPIO.output(GPIO_pin, 0)
+        time.sleep(1)
 
-def light_routine(threshold, x, GPIO_pin):
-    '''Function to be run on a thread for light functionality
-    Based on avg_light_percent over x minutes, turn the lights on or off
-    '''
-    l = avg_light_percent(x)
-    light_control(l, threshold, GPIO_pin)
+# def light_routine(threshold, x, GPIO_pin):
+#     '''Function to be run on a thread for light functionality
+#     Based on avg_light_percent over x minutes, turn the lights on or off
+#     '''
+#     l = avg_light_percent(x)
+#     light_control(l, threshold, GPIO_pin)
 
 if __name__ == '__main__':
    l = avg_light_percent(1)

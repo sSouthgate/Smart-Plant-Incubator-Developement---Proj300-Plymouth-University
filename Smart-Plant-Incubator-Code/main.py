@@ -14,6 +14,10 @@ GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
 GPIO.setup([led_GPIO, valve_GPIO], GPIO.OUT)   # Set GPIO Pin mode to output
 GPIO.output([led_GPIO, valve_GPIO], 0)         # Set GPIO to Low
 
+# Set Sensor Pins
+light_sensor = AdcSensor(0)
+moisture_sensor = AdcSensor(2)
+
 # MQTT connect the clients to the Broker
 sensor_client = mqtt.connect_mqtt("pub_sensor")
 water_client = mqtt.connect_mqtt("sub_water")
@@ -38,13 +42,58 @@ mqtt.subscribe(light_client, light_th_topic)
 moisture_th = 60
 light_th = 50
 
+def moisture_publish(x):
+    '''Function to be run on a thread for publishing moisture data
+    moisture data is avg moisture over x minutes.
+    '''
+    # Get avg moisture over x minutes
+    m = moisture.avg_moisture_percent(x)
+    mqtt.publish(sensor_client, moist_state_topic, m)
+
+def light_publish():
+    '''Function to be run on a thread for publishing current light data every second
+    '''
+    # publish light sensor values every second
+    l = light_sensor.adc_percent
+    mqtt.publish(sensor_client, light_state_topic, l)
+    time.sleep(1)
+
+def moisture_routine(x):
+    '''Function to be run on a thread for valve functionality
+    Based on avg_moisture_percent over x minutes, deliver the required water amount
+    '''
+    moisture_th = mqtt.get_payload(mqtt.water_q)
+    m = moisture.avg_moisture_percent(x)
+    moisture.valve_control(m, moisture_th, valve_GPIO)
+
+def light_routine():
+    '''Function to be run on a thread for light functionality
+    Based on avg_light_percent over x minutes, turn the lights on or off
+    '''
+    light_th = mqtt.get_payload(mqtt.light_q)
+    l = light_sensor.adc_percent
+    light.light_control(l, light_th, led_GPIO)
+
+
+
+def main():
+    # Put each of these in their own threads
+    
+    # Publish avg moisture values every minute
+    moisture_publish(60)
+    # Publish light values
+    light_publish()
+    # Avg over an hour
+    moisture_routine(3600)
+    # Avg over a second
+    light_routine()
+
+
 try:
     while True:
-        m = moisture.avg_moisture_percent(0.02)
-        l = light.avg_light_percent(0.02)
-        mqtt.publish(sensor_client, moist_state_topic, m)
-        mqtt.publish(sensor_client, light_state_topic, l)
         
+        main()
+
 except KeyboardInterrupt:
     print("\nUser stopped program...")
     print("Closing program...")

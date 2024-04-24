@@ -766,3 +766,211 @@ Traceback (most recent call last):
   File "src/habluetooth/scanner.py", line 295, in _async_start
 habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
 2024-04-24 12:13:49.791 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:14:11.471 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:15:03.303 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/threshold, mid: 63
+2024-04-24 12:15:11.470 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:15:14.949 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:16:11.487 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:16:40.129 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:17:11.487 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:18:05.533 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:18:11.478 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:19:11.498 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:19:30.841 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:20:11.501 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.

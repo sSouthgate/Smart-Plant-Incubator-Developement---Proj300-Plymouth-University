@@ -3,10 +3,15 @@ import time
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
 
-def avg_moisture(x):
+moist_mode_voltage = 0
+moist_mode_percent = 1
+
+def avg_moisture_mode(x, mode):
     '''
     Avg moisture over x minutes
-    Returns m in V
+    mode = 0 for Voltage
+    mode = 1 for %
+    Return m in V
     '''
     # Define Moisture Sensor Pin Number
     moisture = AdcSensor(2)
@@ -23,16 +28,26 @@ def avg_moisture(x):
         #Count the amount of loops to make an average
         n = n + 1
         t1 = time.time()    #current time
-        m = m + moisture.adc_voltage
+        
+        # Check mode selected
+        if mode == moist_mode_voltage:
+            m = m + moisture.adc_voltage
+        else:
+            m = m + moisture.adc_percent
         #Sleep to help with power managment
         time.sleep (x)
 
     # Get the average of the moisture value over x minutes
-    m = m / n
+    if n != 0:   
+        m = m / n
+    
     # Round m to 2 decimal points for consistency with adc_voltage class.
     m = round(m, 2)
     # Return the Value stored in m
     return m
+
+def avg_moisture(x) :
+    return avg_moisture_mode(x, moist_mode_voltage)
 
 
 def avg_moisture_percent(x):
@@ -40,32 +55,40 @@ def avg_moisture_percent(x):
     Avg moisture over x minutes
     Returns m in % (see adc_percent)
     '''
-    # Define Moisture Sensor Pin Number
-    moisture = AdcSensor(2)
-    # Number of loops in average functions
-    n = 0
-    # ADC value stored in m
-    m = 0
-    #Define time variables
-    t0 = time.time()    #current time
-    t1 = 0              #set to 0
+    return avg_moisture_mode(x, moist_mode_percent)
 
-    # Loop for x minutues and sleep x seconds in each loop
-    while (t1 < (t0 + (x *60))) :
-        #Count the amount of loops to make an average
-        n = n + 1
-        t1 = time.time()    #current time
-        m = m + moisture.adc_percent
-        #print(m)
-        #Sleep to help with power managment
-        time.sleep (x)
+    '''
+    DEPRECATED
+    '''
 
-    # Get the average of the moisture value over x minutes
-    m = m / n
-    # Round m to 2 decimal points for consistency with adc_voltage class.
-    m = round(m, 2)
-    # Return the Value stored in m
-    return m
+    # # Define Moisture Sensor Pin Number
+    # moisture = AdcSensor(2)
+    # # Number of loops in average functions
+    # n = 0
+    # # ADC value stored in m
+    # m = 0
+    # #Define time variables
+    # t0 = time.time()    #current time
+    # t1 = 0              #set to 0
+
+    # # Loop for x minutues and sleep x seconds in each loop
+    # while (t1 < (t0 + (x *60))) :
+    #     #Count the amount of loops to make an average
+    #     n = n + 1
+    #     t1 = time.time()    #current time
+    #     m = m + moisture.adc_percent
+    #     #print(m)
+    #     #Sleep to help with power managment
+    #     time.sleep (x)
+
+    # # Get the average of the moisture value over x minutes
+    # if n != 0:   
+    #     m = m / n
+    
+    # # Round m to 2 decimal points for consistency with adc_voltage class.
+    # m = round(m, 2)
+    # # Return the Value stored in m
+    # return m
 
 
 def valve_control(m, threshhold, GPIO_pin):

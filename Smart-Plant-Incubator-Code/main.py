@@ -1,4 +1,5 @@
 # IMPORTS
+import threading
 import time
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
@@ -37,9 +38,12 @@ light_th_topic = "incubator/light/threshold"
 mqtt.subscribe(water_client, moist_th_topic)
 mqtt.subscribe(light_client, light_th_topic)
 
+# Default values for moisture and light threshold
+moisture_default = 60
+light_default = 50
 # Base threshhold variables - to be modified by HA through MQTT payloads
-moisture_th = 60
-light_th = 50
+moisture_th = moisture_default
+light_th = light_default
 
 def moisture_publish(x):
     '''Function to be run on a thread for publishing moisture data
@@ -64,10 +68,8 @@ def moisture_routine(x):
     # Sub to topic at start of each loop to get threshold
     # will provite a new value each time beacause retain flag is true
     mqtt.subscribe(water_client, moist_th_topic)
-    moisture_th = mqtt.get_payload(mqtt.water_q)
+    moisture_th = mqtt.get_payload(mqtt.water_q, moisture_default)
     print("Moist. Threashold = ", (moisture_th))
-    if moisture_th == None:
-        moisture_th = 60
     m = moisture.avg_moisture_percent(x)
     moisture.valve_control(m, moisture_th, valve_GPIO)
     mqtt.unsubscribe(water_client, moist_th_topic)
@@ -79,10 +81,8 @@ def light_routine():
     # Sub to topic at start of each loop to get threshold
     # will provite a new value each time beacause retain flag is true
     mqtt.subscribe(light_client, light_th_topic)
-    light_th = mqtt.get_payload(mqtt.light_q)
+    light_th = mqtt.get_payload(mqtt.light_q, light_default)
     print("Light Threashold = ", (light_th))
-    if light_th == None:
-        light_th = 50
     l = light_sensor.adc_percent
     light.light_control(l, light_th, led_GPIO)
     mqtt.unsubscribe(light_client, light_th_topic)

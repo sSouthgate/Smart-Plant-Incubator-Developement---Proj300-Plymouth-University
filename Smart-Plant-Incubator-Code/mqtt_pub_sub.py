@@ -2,6 +2,7 @@ import paho.mqtt.client as mqtt
 import time
 import queue as queue
 import random
+import main
 
 # Define Broker Parameters
 # Broker Address
@@ -117,7 +118,7 @@ def unsubscribe(client, topic):
 
 
 
-def get_payload(q):
+def get_payload(q, default_val):
     '''
     Get payload stored in given queue
     Will loop for each message
@@ -127,7 +128,10 @@ def get_payload(q):
         if message is None:
             continue
         #print("queue:", str(message.payload.decode("utf-8")))
-        msg = float(message.payload.decode("utf-8)"))
+        if message == None:
+            msg = default_val
+        else:
+            msg = float(message.payload.decode("utf-8)"))
         #q.task_done()
         return msg
 

@@ -24,7 +24,7 @@ light_client = mqtt.connect_mqtt("sub_light")
 
 # Start the network loop - opens in it's own thread
 sensor_client.loop_start()
-#water_client.loop_start()
+water_client.loop_start()
 light_client.loop_start()
 
 # MQTT topics
@@ -61,11 +61,13 @@ def moisture_routine(x):
     '''Function to be run on a thread for valve functionality
     Based on avg_moisture_percent over x minutes, deliver the required water amount
     '''
+    # Sub to topic at start of each loop to get threshold
+    # will provite a new value each time beacause retain flag is true
     mqtt.subscribe(water_client, moist_th_topic)
-    #moisture_th = mqtt.get_payload(mqtt.water_q)
-    #print("WATER TH:", (moisture_th))
-    # if moisture_th == None:
-    #     moisture_th = 60
+    moisture_th = mqtt.get_payload(mqtt.water_q)
+    print("Moist. Threashold = ", (moisture_th))
+    if moisture_th == None:
+        moisture_th = 60
     m = moisture.avg_moisture_percent(x)
     moisture.valve_control(m, moisture_th, valve_GPIO)
     mqtt.unsubscribe(water_client, moist_th_topic)
@@ -74,9 +76,11 @@ def light_routine():
     '''Function to be run on a thread for light functionality
     Based on avg_light_percent over x minutes, turn the lights on or off
     '''
+    # Sub to topic at start of each loop to get threshold
+    # will provite a new value each time beacause retain flag is true
     mqtt.subscribe(light_client, light_th_topic)
-    light_th = mqtt.get_light_payload()
-    print("LIGHT TH:", (light_th))
+    light_th = mqtt.get_payload(mqtt.light_q)
+    print("Light Threashold = ", (light_th))
     if light_th == None:
         light_th = 50
     l = light_sensor.adc_percent
@@ -89,11 +93,11 @@ def main():
     # Put each of these in their own threads
     
     # Publish avg moisture values every minute
-    moisture_publish(0.016)
+    moisture_publish(1)
     # Publish light values
     light_publish()
     # Avg over an hour
-    moisture_routine(0.016)
+    moisture_routine(60)
     # Avg over a second
     light_routine()
 

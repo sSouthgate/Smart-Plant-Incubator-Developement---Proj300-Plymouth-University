@@ -43,21 +43,15 @@ light = AdcSensor(light_Pin)
 
 # MQTT connect the client to the Broker
 sensor_client = mqtt.connect_mqtt("pub_sensor")
-water_client = mqtt.connect_mqtt("sub_water")
-light_client = mqtt.connect_mqtt("sub_light")
+# water_client = mqtt.connect_mqtt("sub_water")
+# light_client = mqtt.connect_mqtt("sub_light")
 #Start the network loop - opens in it's own thread
 sensor_client.loop_start()
-water_client.loop_start()
-light_client.loop_start()
+# water_client.loop_start()
+# light_client.loop_start()
 # MQTT topics to publish to
 moisture_topic = "incubator/moisture/value"
 light_topic = "incubator/light/value"
-moisture_thresh_topic = "incubator/moisture/threshold"
-light_thresh_topic = "incubator/light/threshold"
-
-# MQTT SUBS
-mqtt.subscribe(water_client, moisture_thresh_topic)
-mqtt.subscribe(light_client, light_thresh_topic)
 
 # Set the file path and the headers for the CSV file
 file_path = '/home/auzon/Documents/Smart-Plant-Incubator-Code/sensor_log.csv'
@@ -96,20 +90,15 @@ try:
             D = current_date_time.strftime('%d/%m')         # Define D as current Date in day/month
             t1 = time.time()                                # Define t1 as current time in seconds
             t1 = t1 - t0                                    # Substract t1(current time in s) from t0(Start time in s of program)
-            
-            m_th = mqtt.get_payload(mqtt.water_q)
-            l_th = mqtt.get_payload(mqtt.light_q)
-            print("OMFG It'S HERE", (l_th))
-            print("WATER", (m_th))
 
             # Load data into variables so that data is consistent across platforms
-            m = moisture.adc_voltage
-            l = light.adc_voltage
+            m = moisture.adc_percent
+            l = light.adc_percent
 
             # Print info to terminal for inspection
             print('Time Elapsed: {0}s'.format(round(t1)))
-            print('Moisture value: {0}V'.format(m))
-            print('Light value: {0}V'.format(l))
+            print('Moisture value: {0}%'.format(m))
+            print('Light value: {0}%'.format(l))
             mqtt.publish(sensor_client, moisture_topic, m)
             mqtt.publish(sensor_client, light_topic, l)
             
@@ -117,15 +106,16 @@ try:
             with open(file_path, 'a', newline='') as file:
                 writer = csv.writer(file)                       
                 writer.writerow([m,l,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
-                time.sleep(1)
+            
+            time.sleep(60)
 
 # When Ctrl+C is input do this:
 except KeyboardInterrupt:
     print('\nTest Terminated by User, Closing Program...')
 
 sensor_client.loop_stop()
-water_client.loop_stop()
-light_client.loop_stop()
+# water_client.loop_stop()
+# light_client.loop_stop()
 
 # Reset GPIO pins
 GPIO.output(PIN, 0) # Set GPIO pin low

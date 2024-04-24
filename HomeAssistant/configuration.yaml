@@ -27,7 +27,7 @@ mqtt:
     command_topic: "incubator/moisture/threshold"
     icon: mdi:water-percent
     #device_class: "moisture"
-    min: 1
+    min: 0
     max: 100
     step: 1
     retain: True
@@ -36,7 +36,7 @@ mqtt:
     command_topic: "incubator/light/threshold"
     icon: mdi:brightness-6
     #device_class: "illuminance"
-    min: 1
+    min: 0
     max: 100
     step: 1
     retain: True

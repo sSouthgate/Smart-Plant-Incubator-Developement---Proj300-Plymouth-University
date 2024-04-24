@@ -101,7 +101,9 @@
               ]
             }
           ],
-          "cards": []
+          "cards": [],
+          "title": "Incubator Dash Board",
+          "icon": "mdi:flower-tulip"
         }
       ],
       "title": "Incubator Dashboard"

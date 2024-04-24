@@ -16,8 +16,8 @@
       {
         "id": "dashboard_test",
         "show_in_sidebar": true,
-        "icon": "mdi:account",
-        "title": "Test",
+        "icon": "mdi:flower-tulip",
+        "title": "Incubator Dashboard",
         "require_admin": false,
         "mode": "storage",
         "url_path": "dashboard-test"

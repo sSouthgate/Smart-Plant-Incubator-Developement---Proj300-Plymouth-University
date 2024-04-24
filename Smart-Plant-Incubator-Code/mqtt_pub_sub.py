@@ -42,10 +42,9 @@ def connect_mqtt(client_id):
         Triggers through callback function on_connect from paho MQTT \n
         Adds message to queue for later retrieval
         '''
-
         q._put(message)
-        print("message received " ,str(message.payload.decode("utf-8")))
-        print("message topic=",message.topic)
+        # print("message received " ,str(message.payload.decode("utf-8")))
+        # print("message topic=",message.topic)
     
     def on_water_message(client, userdata, message):
         '''
@@ -54,8 +53,8 @@ def connect_mqtt(client_id):
         Adds message to water_q for later retreival
         '''
         water_q._put(message)
-        print("message received " ,str(message.payload.decode("utf-8")))
-        print("message topic=",message.topic)
+        # print("message received " ,str(message.payload.decode("utf-8")))
+        # print("message topic=",message.topic)
     
     def on_light_message(client, userdata, message):
         '''
@@ -63,10 +62,9 @@ def connect_mqtt(client_id):
         See on_message...
         Adds message to light_q for later retreival
         '''
-        print("light message")
         light_q._put(message)
-        print("message received " ,str(message.payload.decode("utf-8")))
-        print("message topic=",message.topic)
+        # print("message received " ,str(message.payload.decode("utf-8")))
+        # print("message topic=",message.topic)
 
     client = mqtt.Client(client_id=client_id, callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
     client.username_pw_set(username, password)
@@ -90,10 +88,9 @@ def publish(client, topic, msg):
     result = client.publish(topic, msg)
     # result: [0, 1] (0 is success)
     status = result[0]
-    if status == 0:
-        print(f"Send `{msg}` to topic `{topic}`")
-    else:
+    if status != 0:
         print(f"Failed to send message to topic {topic}")
+        print("Error: ", (status))
 
 def subscribe(client, topic):
     '''Subscribe to given topic with given client
@@ -101,10 +98,10 @@ def subscribe(client, topic):
     #print(f"Subscribing to topic: {topic}")
     result = client.subscribe(topic)
     status = result[0]
-    if status == 0:
-        print(f"Successfully Subscribed from:", (topic))
-    else:
-        print(f"Subscription Failed:", (topic))
+    if status != 0:
+        print(f"Failed to sub to topic {topic}")
+        print("Error: ", (status))
+
 
 def unsubscribe(client, topic):
     '''
@@ -114,10 +111,10 @@ def unsubscribe(client, topic):
     client.unsubscribe(topic)
     result = client.unsubscribe(topic)
     status = result[0]
-    if status == 0:
-        print(f"Successfully Unsubbed from", (topic))
-    else:
-        print(f"Unsub Failed from", (topic))
+    if status != 0:
+        print(f"Failed to unsubb from topic {topic}")
+        print("Error: ", (status))
+
 
 
 def get_payload(q):
@@ -134,19 +131,6 @@ def get_payload(q):
         #q.task_done()
         return msg
 
-def get_light_payload():
-    '''
-    Get payload stored in given queue
-    Will loop for each message
-    '''
-    while not light_q.empty():
-        message = light_q._get()
-        if message is None:
-            continue
-        #print("queue:", str(message.payload.decode("utf-8")))
-        msg = float(message.payload.decode("utf-8)"))
-        #q.task_done()
-        return msg
 
 def run():
     '''

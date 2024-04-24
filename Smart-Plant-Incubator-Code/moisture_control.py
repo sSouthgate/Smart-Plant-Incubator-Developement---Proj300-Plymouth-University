@@ -56,7 +56,7 @@ def avg_moisture_percent(x):
         n = n + 1
         t1 = time.time()    #current time
         m = m + moisture.adc_percent
-        print(m)
+        #print(m)
         #Sleep to help with power managment
         time.sleep (x)
 

@@ -1,6 +1,6 @@
 import paho.mqtt.client as mqtt
 import time
-from queue import Queue
+import queue as queue
 import random
 
 # Define Broker Parameters
@@ -12,9 +12,10 @@ username = "auzon"
 password = "2203"
 
 #Initialise Queues - This is thread safe!
-q = Queue()
-water_q = Queue()
-light_q = Queue()
+q = queue.LifoQueue()
+water_q = queue.LifoQueue()
+light_q = queue.LifoQueue()
+
 
 # MQTT pub/sub related functions
 
@@ -42,7 +43,7 @@ def connect_mqtt(client_id):
         Adds message to queue for later retrieval
         '''
 
-        q.put(message)
+        q._put(message)
         print("message received " ,str(message.payload.decode("utf-8")))
         print("message topic=",message.topic)
     
@@ -52,9 +53,9 @@ def connect_mqtt(client_id):
         See on_message...
         Adds message to water_q for later retreival
         '''
-        water_q.put(message)
-        # print("message received " ,str(message.payload.decode("utf-8")))
-        # print("message topic=",message.topic)
+        water_q._put(message)
+        print("message received " ,str(message.payload.decode("utf-8")))
+        print("message topic=",message.topic)
     
     def on_light_message(client, userdata, message):
         '''
@@ -62,9 +63,10 @@ def connect_mqtt(client_id):
         See on_message...
         Adds message to light_q for later retreival
         '''
-        light_q.put(message)
-        # print("message received " ,str(message.payload.decode("utf-8")))
-        # print("message topic=",message.topic)
+        print("light message")
+        light_q._put(message)
+        print("message received " ,str(message.payload.decode("utf-8")))
+        print("message topic=",message.topic)
 
     client = mqtt.Client(client_id=client_id, callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
     client.username_pw_set(username, password)
@@ -74,9 +76,9 @@ def connect_mqtt(client_id):
     if client_id == "sub_water":
         client.on_message = on_water_message
     elif client_id == "sub_light":
-        client.on_message == on_light_message
+        client.on_message = on_light_message
     else :
-        client.on_message == on_message
+        client.on_message = on_message
     
     client.connect(broker, port)
     return client
@@ -96,25 +98,27 @@ def publish(client, topic, msg):
 def subscribe(client, topic):
     '''Subscribe to given topic with given client
     '''
-    print(f"Subscribing to topic: {topic}")
+    #print(f"Subscribing to topic: {topic}")
     result = client.subscribe(topic)
     status = result[0]
     if status == 0:
-        print(f"Successfully Subscribed")
+        print(f"Successfully Subscribed from:", (topic))
     else:
-        print(f"Subscription Failed")
+        print(f"Subscription Failed:", (topic))
 
 def unsubscribe(client, topic):
     '''
-    Unsub from given topic with given client'''
-    print(f"Unsubscribbing from topic")
+    Unsub from given topic with given client
+    '''
+    #print(f"Unsubscribbing from topic")
     client.unsubscribe(topic)
     result = client.unsubscribe(topic)
     status = result[0]
     if status == 0:
-        print(f"Successfully Unsubbed")
+        print(f"Successfully Unsubbed from", (topic))
     else:
-        print(f"Unsub Failed")
+        print(f"Unsub Failed from", (topic))
+
 
 def get_payload(q):
     '''
@@ -122,11 +126,26 @@ def get_payload(q):
     Will loop for each message
     '''
     while not q.empty():
-        message = q.get()
+        message = q._get()
         if message is None:
             continue
-        print("queue:", str(message.payload.decode("utf-8")))
+        #print("queue:", str(message.payload.decode("utf-8")))
         msg = float(message.payload.decode("utf-8)"))
+        #q.task_done()
+        return msg
+
+def get_light_payload():
+    '''
+    Get payload stored in given queue
+    Will loop for each message
+    '''
+    while not light_q.empty():
+        message = light_q._get()
+        if message is None:
+            continue
+        #print("queue:", str(message.payload.decode("utf-8")))
+        msg = float(message.payload.decode("utf-8)"))
+        #q.task_done()
         return msg
 
 def run():
@@ -139,29 +158,29 @@ def run():
     publish(client, topic, msg)
     subscribe(client, topic)
     time.sleep(4)
-    unsubscribe(client, topic)
+    #unsubscribe(client, topic)
     client.loop_stop()
 
+
+
 if __name__ == "__main__":
-    topic = "incubator/moisture/threshold"
-    client_id = "sub_water"
-    #"client" + str(random.randint(0,10))
+    #topic = "incubator/moisture/threshold"
+    topic = "incubator/light/threshold"
+   # client_id = "sub_water"
+    client_id = "sub_light"
+    #client_id = "client" + str(random.randint(0,10))
     print(client_id)
     msg = random.randint(0,10)
     print(msg)
     run()
-    while not q.empty():
-        message = q.get()
-        if message is None:
-            continue
-        print("Message from queue:", str(message.payload.decode("utf-8")))
-        m = int(message.payload.decode("utf-8"))
-        print(m)
+    # while not q.empty():
+    #     message = q.get()
+    #     if message is None:
+    #         continue
+    #     print("Message from queue:", str(message.payload.decode("utf-8")))
+    #     m = int(message.payload.decode("utf-8"))
+    #     print(m)
     
-    while not water_q.empty():
-        message = water_q.get()
-        if message is None:
-            continue
-        print("Message from queue:", str(message.payload.decode("utf-8")))
-        m = float(message.payload.decode("utf-8"))
-        print(m)
+    #message = get_payload(water_q)
+    message = get_payload(light_q)
+    print(message)

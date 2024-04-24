@@ -26,17 +26,17 @@ mqtt:
   - name: "Incubator Valve Threshold"
     command_topic: "incubator/moisture/threshold"
     icon: mdi:water-percent
-    device_class: "moisture"
-    min: 0.01
+    #device_class: "moisture"
+    min: 1
     max: 100
     step: 1
     retain: True
-
+  
   - name: "Incubator Light Threshold"
     command_topic: "incubator/light/threshold"
     icon: mdi:brightness-6
-    device_class: "illuminance"
-    min: 0.01
+    #device_class: "illuminance"
+    min: 1
     max: 100
     step: 1
     retain: True

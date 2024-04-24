@@ -1,0 +1,768 @@
+2024-04-24 01:25:16.101 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:34:03.292 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: {('radio_browser', '26bf8878e1d69114284de4e76247f9f9'): 53.613978729}
+2024-04-24 10:35:03.351 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: {('radio_browser', '26bf8878e1d69114284de4e76247f9f9'): 53.613978729}
+2024-04-24 10:35:43.493 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Error requesting homeassistant_alerts data: Cannot connect to host alerts.home-assistant.io:443 ssl:default [Try again]
+2024-04-24 10:35:43.499 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:35:58.998 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:36:24.071 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:37:09.242 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:38:34.542 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:40:00.018 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:41:25.134 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:42:50.409 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:44:15.824 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:45:41.331 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:47:06.628 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:47:14.569 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:14.618 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:47:18.915 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '25', mid: 18, qos: 0
+2024-04-24 10:47:19.559 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:19.563 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:47:19.660 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '44', mid: 19, qos: 0
+2024-04-24 10:47:20.208 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '58', mid: 20, qos: 0
+2024-04-24 10:47:20.841 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '73', mid: 21, qos: 0
+2024-04-24 10:47:24.542 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:24.548 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:47:29.534 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:29.538 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:47:30.613 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '45', mid: 22, qos: 0
+2024-04-24 10:47:31.954 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '71', mid: 23, qos: 0
+2024-04-24 10:47:34.516 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:34.525 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:47:37.224 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '33', mid: 24, qos: 0
+2024-04-24 10:47:39.522 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:39.532 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:47:40.075 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '76', mid: 25, qos: 0
+2024-04-24 10:47:44.503 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:44.510 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:47:45.350 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '79', mid: 26, qos: 0
+2024-04-24 10:47:46.874 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '32', mid: 27, qos: 0
+2024-04-24 10:47:49.510 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:49.514 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:47:54.487 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:47:54.492 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:48:31.788 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:49:25.654 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/value, mid: 28, qos: 0
+2024-04-24 10:49:25.654 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/moisture/value, mid: 28, qos: 0
+2024-04-24 10:49:56.990 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:49:59.804 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/value, mid: 29, qos: 0
+2024-04-24 10:49:59.805 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/moisture/value, mid: 29, qos: 0
+2024-04-24 10:51:22.187 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:51:52.226 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:51:52.268 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:51:53.867 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '38', mid: 30, qos: 0
+2024-04-24 10:51:56.684 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '61', mid: 31, qos: 0
+2024-04-24 10:51:57.221 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:51:57.230 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:51:59.087 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '69', mid: 32, qos: 0
+2024-04-24 10:52:01.006 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '43', mid: 33, qos: 0
+2024-04-24 10:52:02.203 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 10:52:02.210 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 10:52:02.222 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '27', mid: 34, qos: 0
+2024-04-24 10:52:03.326 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '38', mid: 35, qos: 0
+2024-04-24 10:52:04.060 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '57', mid: 36, qos: 0
+2024-04-24 10:52:47.471 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:53:11.718 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '22', mid: 37, qos: 0
+2024-04-24 10:53:13.245 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light: '66', mid: 38, qos: 0
+2024-04-24 10:54:12.607 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:54:50.551 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light, mid: 39, qos: 0
+2024-04-24 10:54:50.555 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light (qos=0): b'66'
+2024-04-24 10:54:53.303 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light, mid: 40
+2024-04-24 10:54:53.623 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light, mid: 41, qos: 0
+2024-04-24 10:54:53.623 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light (qos=0): b'66'
+2024-04-24 10:55:37.975 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:57:03.377 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:58:28.849 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 10:59:10.324 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light (qos=0): b'7'
+2024-04-24 10:59:17.104 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light, mid: 42
+2024-04-24 10:59:17.984 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light, mid: 43, qos: 0
+2024-04-24 10:59:17.986 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light (qos=0): b'66'
+2024-04-24 10:59:19.328 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light, mid: 44
+2024-04-24 10:59:20.048 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light, mid: 45, qos: 0
+2024-04-24 10:59:20.051 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light (qos=0): b'66'
+2024-04-24 10:59:26.665 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light (qos=0): b'10'
+2024-04-24 10:59:54.171 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:00:47.754 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light, mid: 46
+2024-04-24 11:00:50.073 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '73', mid: 47, qos: 0
+2024-04-24 11:00:57.332 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '30', mid: 48, qos: 0
+2024-04-24 11:01:19.433 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:02:40.300 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '44', mid: 49, qos: 0
+2024-04-24 11:02:44.723 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:04:10.221 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:05:35.426 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:07:00.658 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:08:26.128 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:09:04.195 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/value, mid: 50, qos: 0
+2024-04-24 11:09:04.195 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/moisture/value, mid: 50, qos: 0
+2024-04-24 11:09:46.391 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/moisture/threshold, mid: 51, qos: 0
+2024-04-24 11:09:46.394 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/moisture/threshold (qos=0): b'44'
+2024-04-24 11:09:51.419 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:10:09.371 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:10:09.419 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:10:14.366 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:10:14.371 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:10:19.358 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:10:19.408 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:10:56.147 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:10:56.188 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:10:59.224 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '66', mid: 52, qos: 0
+2024-04-24 11:10:59.234 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/threshold (qos=0): b'66'
+2024-04-24 11:11:00.951 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '53', mid: 53, qos: 0
+2024-04-24 11:11:00.956 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/threshold (qos=0): b'53'
+2024-04-24 11:11:01.142 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:11:01.147 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:11:02.643 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '37', mid: 54, qos: 0
+2024-04-24 11:11:02.648 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/threshold (qos=0): b'37'
+2024-04-24 11:11:04.167 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/threshold (qos=0): b'69'
+2024-04-24 11:11:04.171 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '69', mid: 55, qos: 0
+2024-04-24 11:11:06.118 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:11:06.122 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:11:16.639 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:11:26.998 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:11:27.048 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:11:31.995 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:11:31.999 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:12:42.105 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:14:07.208 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:15:32.566 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:15:58.980 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/moisture/threshold, mid: 56
+2024-04-24 11:16:02.363 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:16:58.008 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:18:10.968 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/value, mid: 57, qos: 0
+2024-04-24 11:18:10.969 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/moisture/value, mid: 57, qos: 0
+2024-04-24 11:18:23.111 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:19:48.218 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:20:36.060 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:20:36.109 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:21:13.387 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:22:06.756 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:22:06.798 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:22:11.759 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:22:11.764 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:22:16.753 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:22:16.758 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:22:21.752 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:22:21.757 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:22:26.780 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:22:26.783 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:22:31.781 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:22:31.782 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:22:33.858 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '38', mid: 58, qos: 0
+2024-04-24 11:22:36.767 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:22:36.774 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:22:38.801 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:22:41.786 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:22:41.788 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:23:33.817 ERROR (SyncWorker_4) [homeassistant.util.yaml.loader] while parsing a block collection
+  in "/config/configuration.yaml", line 26, column 3
+expected <block end>, but found '?'
+  in "/config/configuration.yaml", line 35, column 3
+2024-04-24 11:23:33.820 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [1529258728] while parsing a block collection
+  in "configuration.yaml", line 26, column 3
+expected <block end>, but found '?'
+  in "configuration.yaml", line 35, column 3
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/util/yaml/loader.py", line 261, in parse_yaml
+    return _parse_yaml(FastSafeLoader, content, secrets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/util/yaml/loader.py", line 288, in _parse_yaml
+    return yaml.load(content, Loader=lambda stream: loader(stream, secrets))  # type: ignore[arg-type]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "yaml/_yaml.pyx", line 673, in yaml._yaml.CParser.get_single_node
+  File "yaml/_yaml.pyx", line 687, in yaml._yaml.CParser._compose_document
+  File "yaml/_yaml.pyx", line 731, in yaml._yaml.CParser._compose_node
+  File "yaml/_yaml.pyx", line 845, in yaml._yaml.CParser._compose_mapping_node
+  File "yaml/_yaml.pyx", line 731, in yaml._yaml.CParser._compose_node
+  File "yaml/_yaml.pyx", line 845, in yaml._yaml.CParser._compose_mapping_node
+  File "yaml/_yaml.pyx", line 729, in yaml._yaml.CParser._compose_node
+  File "yaml/_yaml.pyx", line 808, in yaml._yaml.CParser._compose_sequence_node
+  File "yaml/_yaml.pyx", line 860, in yaml._yaml.CParser._parse_next_event
+yaml.parser.ParserError: while parsing a block collection
+  in "/config/configuration.yaml", line 26, column 3
+did not find expected '-' indicator
+  in "/config/configuration.yaml", line 35, column 3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/util/yaml/loader.py", line 276, in _parse_yaml_python
+    return _parse_yaml(PythonSafeLoader, content, secrets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/util/yaml/loader.py", line 288, in _parse_yaml
+    return yaml.load(content, Loader=lambda stream: loader(stream, secrets))  # type: ignore[arg-type]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/composer.py", line 82, in compose_node
+    node = self.compose_sequence_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/composer.py", line 110, in compose_sequence_node
+    while not self.check_event(SequenceEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/yaml/parser.py", line 392, in parse_block_sequence_entry
+    raise ParserError("while parsing a block collection", self.marks[-1],
+yaml.parser.ParserError: while parsing a block collection
+  in "configuration.yaml", line 26, column 3
+expected <block end>, but found '?'
+  in "configuration.yaml", line 35, column 3
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/websocket_api/commands.py", line 239, in handle_call_service
+    response = await hass.services.async_call(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/core.py", line 2543, in async_call
+    response_data = await coro
+                    ^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/core.py", line 2580, in _execute_service
+    return await target(service_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/service.py", line 1074, in _async_admin_handler
+    await result
+  File "/usr/src/homeassistant/homeassistant/components/mqtt/__init__.py", line 401, in _reload_config
+    config_yaml = await async_integration_yaml_config(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/helpers/reload.py", line 168, in async_integration_yaml_config
+    config = await conf_util.async_hass_config_yaml(hass)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/config.py", line 487, in async_hass_config_yaml
+    config = await hass.loop.run_in_executor(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/config.py", line 542, in load_yaml_config_file
+    conf_dict = load_yaml_dict(config_path, secrets)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/util/yaml/loader.py", line 246, in load_yaml_dict
+    loaded_yaml = load_yaml(fname, secrets)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/util/yaml/loader.py", line 232, in load_yaml
+    return parse_yaml(conf_file, secrets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/util/yaml/loader.py", line 268, in parse_yaml
+    return _parse_yaml_python(content, secrets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/util/yaml/loader.py", line 279, in _parse_yaml_python
+    raise HomeAssistantError(exc) from exc
+homeassistant.exceptions.HomeAssistantError: while parsing a block collection
+  in "configuration.yaml", line 26, column 3
+expected <block end>, but found '?'
+  in "configuration.yaml", line 35, column 3
+2024-04-24 11:24:04.035 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:24:14.037 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/value, mid: 59, qos: 0
+2024-04-24 11:24:14.037 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/moisture/value, mid: 59, qos: 0
+2024-04-24 11:24:27.529 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:24:27.589 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:24:32.534 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:24:32.540 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:24:37.554 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:24:37.562 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:24:42.575 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:24:42.580 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:24:47.199 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '65', mid: 60, qos: 0
+2024-04-24 11:24:47.586 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:24:47.593 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:24:52.199 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '85', mid: 61, qos: 0
+2024-04-24 11:24:52.589 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:24:52.594 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:24:55.165 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '43', mid: 62, qos: 0
+2024-04-24 11:24:57.588 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:24:57.592 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:25:02.600 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:25:02.605 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:25:05.198 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '1', mid: 63, qos: 0
+2024-04-24 11:25:07.602 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:25:07.607 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:25:12.607 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:25:12.628 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:25:29.361 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:26:03.104 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/moisture/threshold: '27', mid: 64, qos: 0
+2024-04-24 11:26:54.668 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:28:20.158 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:29:11.349 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:29:11.399 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:29:16.366 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:29:16.374 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:29:21.367 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:29:21.374 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:29:26.382 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:29:26.385 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:29:45.360 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:29:54.945 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/threshold, mid: 65, qos: 0
+2024-04-24 11:29:54.948 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light/threshold (qos=0): b'85'
+2024-04-24 11:29:55.736 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/threshold, mid: 66
+2024-04-24 11:29:56.410 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/threshold, mid: 67, qos: 0
+2024-04-24 11:29:56.412 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light/threshold (qos=0): b'85'
+2024-04-24 11:29:58.367 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/threshold, mid: 68
+2024-04-24 11:30:00.160 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/threshold, mid: 69, qos: 0
+2024-04-24 11:30:00.163 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light/threshold (qos=0): b'85'
+2024-04-24 11:30:02.407 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/threshold, mid: 70
+2024-04-24 11:30:45.130 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:30:59.258 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:31:10.424 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:32:08.474 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:32:08.518 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:32:35.725 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:32:37.879 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:32:37.918 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:33:51.403 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:33:51.448 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:34:01.031 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:34:15.060 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:34:15.108 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:34:48.962 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:34:49.008 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:35:26.402 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:36:28.379 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:36:28.418 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:36:49.517 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:36:49.568 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:36:51.584 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:37:27.583 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/moisture/value (qos=0): b'0.0'
+2024-04-24 11:37:27.628 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/value (qos=0): b'0.0'
+2024-04-24 11:37:59.996 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '5', mid: 71, qos: 0
+2024-04-24 11:38:05.737 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '5', mid: 72, qos: 0
+2024-04-24 11:38:05.921 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '5', mid: 73, qos: 0
+2024-04-24 11:38:06.072 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '5', mid: 74, qos: 0
+2024-04-24 11:38:06.225 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '5', mid: 75, qos: 0
+2024-04-24 11:38:06.369 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '5', mid: 76, qos: 0
+2024-04-24 11:38:06.497 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '5', mid: 77, qos: 0
+2024-04-24 11:38:09.909 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 78, qos: 0
+2024-04-24 11:38:10.337 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 79, qos: 0
+2024-04-24 11:38:10.706 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 80, qos: 0
+2024-04-24 11:38:16.907 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:38:17.062 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/threshold, mid: 81, qos: 0
+2024-04-24 11:38:17.066 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light/threshold (qos=0): b'85'
+2024-04-24 11:38:18.490 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 82, qos: 0
+2024-04-24 11:38:18.492 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:19.081 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 83, qos: 0
+2024-04-24 11:38:19.082 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:19.458 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 84, qos: 0
+2024-04-24 11:38:19.459 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:19.626 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 85, qos: 0
+2024-04-24 11:38:19.629 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:19.785 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 86, qos: 0
+2024-04-24 11:38:19.788 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:20.177 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 87, qos: 0
+2024-04-24 11:38:20.181 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:20.345 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 88, qos: 0
+2024-04-24 11:38:20.348 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:20.474 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:20.476 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 89, qos: 0
+2024-04-24 11:38:20.633 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 90, qos: 0
+2024-04-24 11:38:20.637 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:20.794 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 91, qos: 0
+2024-04-24 11:38:20.794 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:20.943 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 92, qos: 0
+2024-04-24 11:38:20.949 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:21.082 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 93, qos: 0
+2024-04-24 11:38:21.085 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:38:51.775 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'4'
+2024-04-24 11:39:04.365 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'1'
+2024-04-24 11:39:04.884 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 94, qos: 0
+2024-04-24 11:39:04.885 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:05.043 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 95, qos: 0
+2024-04-24 11:39:05.046 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:05.193 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 96, qos: 0
+2024-04-24 11:39:05.196 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:05.353 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 97, qos: 0
+2024-04-24 11:39:05.356 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:05.506 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 98, qos: 0
+2024-04-24 11:39:05.510 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:05.642 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 99, qos: 0
+2024-04-24 11:39:05.643 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:05.794 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 100, qos: 0
+2024-04-24 11:39:05.798 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:06.161 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 101, qos: 0
+2024-04-24 11:39:06.165 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:06.490 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 102, qos: 0
+2024-04-24 11:39:06.493 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:06.858 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 103, qos: 0
+2024-04-24 11:39:06.862 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:07.633 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 104, qos: 0
+2024-04-24 11:39:07.636 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:39:42.095 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:41:07.541 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:41:25.044 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'5'
+2024-04-24 11:41:44.922 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'9'
+2024-04-24 11:41:45.205 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 105, qos: 0
+2024-04-24 11:41:45.209 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:45.380 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 106, qos: 0
+2024-04-24 11:41:45.384 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:45.539 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 107, qos: 0
+2024-04-24 11:41:45.544 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:45.679 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 108, qos: 0
+2024-04-24 11:41:45.679 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:45.831 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 109, qos: 0
+2024-04-24 11:41:45.832 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:45.955 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 110, qos: 0
+2024-04-24 11:41:45.959 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:46.099 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 111, qos: 0
+2024-04-24 11:41:46.103 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:46.622 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 112, qos: 0
+2024-04-24 11:41:46.623 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:46.764 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 113, qos: 0
+2024-04-24 11:41:46.769 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:46.914 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 114, qos: 0
+2024-04-24 11:41:46.918 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:47.626 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 115, qos: 0
+2024-04-24 11:41:47.630 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:47.796 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 116, qos: 0
+2024-04-24 11:41:47.799 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:47.995 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 117, qos: 0
+2024-04-24 11:41:47.998 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:48.525 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 118, qos: 0
+2024-04-24 11:41:48.527 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:41:48.915 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 119, qos: 0
+2024-04-24 11:41:48.919 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:42:32.868 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:43:58.057 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:44:08.520 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/threshold, mid: 120
+2024-04-24 11:44:16.370 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from homeassistant/+/+/+/config, mid: 121
+2024-04-24 11:44:16.370 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from tasmota/discovery/#, mid: 121
+2024-04-24 11:44:16.370 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/moisture/value, mid: 121
+2024-04-24 11:44:16.370 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from dsmr/#, mid: 121
+2024-04-24 11:44:16.371 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from drop_connect/discovery/#, mid: 121
+2024-04-24 11:44:16.371 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from fully/deviceInfo/+, mid: 121
+2024-04-24 11:44:16.371 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/value, mid: 121
+2024-04-24 11:44:16.371 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from homeassistant/+/+/config, mid: 121
+2024-04-24 11:44:17.450 INFO (Thread-4 (_thread_main)) [homeassistant.components.mqtt.client] Connected to MQTT server localhost:1883 (0)
+2024-04-24 11:44:17.471 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to homeassistant/+/+/config, mid: 1, qos: 0
+2024-04-24 11:44:17.472 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to homeassistant/+/+/+/config, mid: 1, qos: 0
+2024-04-24 11:44:17.472 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/value, mid: 1, qos: 0
+2024-04-24 11:44:17.472 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/moisture/value, mid: 1, qos: 0
+2024-04-24 11:44:18.469 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to drop_connect/discovery/#, mid: 2, qos: 0
+2024-04-24 11:44:18.470 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to dsmr/#, mid: 2, qos: 0
+2024-04-24 11:44:18.470 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to fully/deviceInfo/+, mid: 2, qos: 0
+2024-04-24 11:44:18.470 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to tasmota/discovery/#, mid: 2, qos: 0
+2024-04-24 11:44:20.473 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on homeassistant/status: 'online', mid: 3, qos: 0
+2024-04-24 11:45:23.156 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:45:55.577 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '44', mid: 4, qos: 0
+2024-04-24 11:45:56.367 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '52', mid: 5, qos: 0
+2024-04-24 11:45:57.659 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '67', mid: 6, qos: 0
+2024-04-24 11:45:58.203 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '59', mid: 7, qos: 0
+2024-04-24 11:46:06.764 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/threshold, mid: 8, qos: 0
+2024-04-24 11:46:06.768 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light/threshold (qos=0): b'59'
+2024-04-24 11:46:08.683 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '40', mid: 9, qos: 0
+2024-04-24 11:46:08.685 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'40'
+2024-04-24 11:46:09.322 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'64'
+2024-04-24 11:46:09.322 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting retained message on incubator/light/threshold: '64', mid: 10, qos: 0
+2024-04-24 11:46:48.494 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:47:47.066 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'0'
+2024-04-24 11:48:13.888 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:49:39.141 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:50:09.468 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/threshold, mid: 11
+2024-04-24 11:50:10.293 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light/threshold (qos=0): b'64'
+2024-04-24 11:50:10.295 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/threshold, mid: 12, qos: 0
+2024-04-24 11:51:04.391 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:52:29.884 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:53:55.271 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:55:16.007 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/threshold, mid: 13
+2024-04-24 11:55:20.498 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:56:46.009 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:57:20.614 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 14, qos: 0
+2024-04-24 11:57:26.119 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 15, qos: 0
+2024-04-24 11:57:26.869 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 16, qos: 0
+2024-04-24 11:57:27.048 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 17, qos: 0
+2024-04-24 11:57:27.205 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 18, qos: 0
+2024-04-24 11:57:27.384 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 19, qos: 0
+2024-04-24 11:57:27.548 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 20, qos: 0
+2024-04-24 11:57:27.708 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 21, qos: 0
+2024-04-24 11:57:27.877 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 22, qos: 0
+2024-04-24 11:57:28.030 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 23, qos: 0
+2024-04-24 11:57:28.187 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 24, qos: 0
+2024-04-24 11:57:28.342 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 25, qos: 0
+2024-04-24 11:57:28.516 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 26, qos: 0
+2024-04-24 11:57:28.663 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 27, qos: 0
+2024-04-24 11:57:28.837 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 28, qos: 0
+2024-04-24 11:58:03.741 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/threshold, mid: 29, qos: 0
+2024-04-24 11:58:03.747 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light/threshold (qos=0): b'64'
+2024-04-24 11:58:05.214 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:05.215 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 30, qos: 0
+2024-04-24 11:58:05.583 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:05.584 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 31, qos: 0
+2024-04-24 11:58:05.766 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:05.767 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 32, qos: 0
+2024-04-24 11:58:05.934 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:05.935 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 33, qos: 0
+2024-04-24 11:58:06.102 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:06.104 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 34, qos: 0
+2024-04-24 11:58:06.285 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 35, qos: 0
+2024-04-24 11:58:06.289 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:06.471 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 36, qos: 0
+2024-04-24 11:58:06.473 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:06.653 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 37, qos: 0
+2024-04-24 11:58:06.657 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:06.829 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 38, qos: 0
+2024-04-24 11:58:06.832 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:07.017 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 39, qos: 0
+2024-04-24 11:58:07.018 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:07.206 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 40, qos: 0
+2024-04-24 11:58:07.211 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:07.389 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 41, qos: 0
+2024-04-24 11:58:07.392 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:07.589 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 42, qos: 0
+2024-04-24 11:58:07.592 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:07.781 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 43, qos: 0
+2024-04-24 11:58:07.784 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:07.958 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 44, qos: 0
+2024-04-24 11:58:07.959 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:08.142 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 45, qos: 0
+2024-04-24 11:58:08.143 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:58:09.459 DEBUG (MainThread) [homeassistant.components.mqtt.client] Unsubscribing from incubator/light/threshold, mid: 46
+2024-04-24 11:58:11.145 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 11:58:59.556 DEBUG (MainThread) [homeassistant.components.mqtt.client] Subscribing to incubator/light/threshold, mid: 47, qos: 0
+2024-04-24 11:58:59.561 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received retained message on incubator/light/threshold (qos=0): b'64'
+2024-04-24 11:59:06.264 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'8'
+2024-04-24 11:59:09.693 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 48, qos: 0
+2024-04-24 11:59:09.696 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:59:09.879 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 49, qos: 0
+2024-04-24 11:59:09.880 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:59:10.046 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:59:10.048 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 50, qos: 0
+2024-04-24 11:59:10.205 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 51, qos: 0
+2024-04-24 11:59:10.209 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:59:10.358 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 52, qos: 0
+2024-04-24 11:59:10.361 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:59:10.518 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 53, qos: 0
+2024-04-24 11:59:10.521 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:59:10.686 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 54, qos: 0
+2024-04-24 11:59:10.687 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 11:59:36.636 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:01:02.089 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:02:27.303 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:03:41.738 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 55, qos: 0
+2024-04-24 12:03:41.744 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 56, qos: 0
+2024-04-24 12:03:41.764 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 12:03:41.767 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 12:03:41.865 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 57, qos: 0
+2024-04-24 12:03:41.870 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 12:03:42.008 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'1'
+2024-04-24 12:03:42.026 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 58, qos: 0
+2024-04-24 12:03:42.027 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 12:03:42.185 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 59, qos: 0
+2024-04-24 12:03:42.188 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 12:03:42.329 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 60, qos: 0
+2024-04-24 12:03:42.332 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 12:03:42.488 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 61, qos: 0
+2024-04-24 12:03:42.491 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 12:03:42.649 DEBUG (MainThread) [homeassistant.components.mqtt.client] Transmitting message on incubator/light/threshold: '3', mid: 62, qos: 0
+2024-04-24 12:03:42.651 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'3'
+2024-04-24 12:03:52.625 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:05:17.890 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:05:36.167 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Error stopping scanner: [org.bluez.Error.InProgress] Operation already in progress
+2024-04-24 12:06:43.113 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:07:36.156 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Error stopping scanner: [org.bluez.Error.InProgress] Operation already in progress
+2024-04-24 12:08:08.439 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:08:11.722 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:08:44.122 DEBUG (MainThread) [homeassistant.components.mqtt.client] Received message on incubator/light/threshold (qos=0): b'2'
+2024-04-24 12:09:11.464 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:09:33.948 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:10:11.462 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:10:59.427 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:11:11.474 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:12:11.461 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:12:24.611 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-24 12:13:11.472 ERROR (MainThread) [habluetooth.scanner] hci0 (B8:27:EB:20:CE:9F): Failed to restart Bluetooth scanner: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 250, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/site-packages/bleak/__init__.py", line 198, in start
+    await self._backend.start()
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/scanner.py", line 185, in start
+    self._stop = await manager.active_scan(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/bleak/backends/bluezdbus/manager.py", line 408, in active_scan
+    reply = await self._bus.call(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/dbus_fast/aio/message_bus.py", line 384, in call
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 249, in habluetooth.scanner.HaScanner._async_start
+  File "/usr/local/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/habluetooth/scanner.py", line 381, in habluetooth.scanner.HaScanner._async_restart_scanner
+  File "src/habluetooth/scanner.py", line 295, in _async_start
+habluetooth.scanner.ScannerStartError: hci0 (B8:27:EB:20:CE:9F): Timed out starting Bluetooth after 15 seconds; Try power cycling the Bluetooth hardware.
+2024-04-24 12:13:49.791 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'

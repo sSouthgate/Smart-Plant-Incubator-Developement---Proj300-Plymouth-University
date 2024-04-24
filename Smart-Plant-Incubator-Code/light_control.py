@@ -71,11 +71,12 @@ def avg_light_percent(x):
 
 def light_control(l, threshold, GPIO_pin):
     '''
-    Incubator Light Control
+    Incubator Light Control for values in %
     
     Args:
-        PIN(int): RPi GPIO Pin connected to Light circuit MOSFET
-        L(int): Desired Light Level for lights to turn on
+        l(float): current light level
+        threshhold(float): light level threshold for lights to turn on
+        GPIO_pin(int): RPi GPIO Pin connected to Light circuit MOSFET
     '''
 
     # SETUP RPi GPIO
@@ -89,12 +90,12 @@ def light_control(l, threshold, GPIO_pin):
     
     if l < threshold:
         state = 'Low Light Levels, Turning On Lights'
-        print('Light Level: {0}, {1}'.format(sensor.adc_voltage, state))
+        print('Light Level: {0}, {1}'.format(sensor.adc_percent, state))
         GPIO.output(GPIO_pin, 1)
         time.sleep(1)
     else:
         state = 'Light Levels Nominal, Turning Off Lights'
-        print('Light Level: {0}, {1}'.format(sensor.adc_voltage, state))
+        print('Light Level: {0}, {1}'.format(sensor.adc_percent, state))
         GPIO.output(GPIO_pin, 0)
         time.sleep(1)
 

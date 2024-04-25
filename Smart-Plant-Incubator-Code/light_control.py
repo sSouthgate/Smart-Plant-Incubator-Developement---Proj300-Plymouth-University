@@ -4,12 +4,17 @@ from grove_light_sensor_v1_2 import GroveLightSensor
 import RPi.GPIO as GPIO
 from adc_sensor import AdcSensor
 
-def avg_light(x):
+light_mode_voltage = 0
+light_mode_percent = 1
+
+def avg_light_mode(x, mode):
     '''
     Avg moisture over x minutes
-    Returns m in V
+    mode = 0 for Voltage
+    mode = 1 for %
+    Return m in V
     '''
-    # Define light Sensor Pin Number
+    # Define Moisture Sensor Pin Number
     light = AdcSensor(0)
     # Number of loops in average functions
     n = 0
@@ -24,50 +29,37 @@ def avg_light(x):
         #Count the amount of loops to make an average
         n = n + 1
         t1 = time.time()    #current time
-        l = l + light.adc_voltage
+        
+        # Check mode selected
+        if mode == light_mode_voltage:
+            l = l + light.adc_voltage
+        else:
+            l = l + light.adc_percent
         #Sleep to help with power managment
         time.sleep (x)
 
     # Get the average of the moisture value over x minutes
-    l = l / n
+    if n != 0:   
+        l = l / n
+    
     # Round m to 2 decimal points for consistency with adc_voltage class.
     l = round(l, 2)
     # Return the Value stored in m
     return l
 
+def avg_light(x) :
+    '''
+    Avg light over x minutes
+    Returns l in V (see adc_voltage)
+    '''
+    return avg_light_mode(x, light_mode_voltage)
 
 def avg_light_percent(x):
     '''
     Avg moisture over x minutes
     Returns m in % (see adc_percent)
     '''
-    # Define light Sensor Pin Number
-    light = AdcSensor(0)
-    # Number of loops in average functions
-    n = 0
-    # ADC value stored in m
-    l = 0
-    #Define time variables
-    t0 = time.time()    #current time
-    t1 = 0              #set to 0
-
-    # Loop for x minutues and sleep x seconds in each loop
-    while (t1 < (t0 + (x *60))) :
-        #Count the amount of loops to make an average
-        n = n + 1
-        t1 = time.time()    #current time
-        l = l + light.adc_percent
-        print(l)
-        #Sleep to help with power managment
-        time.sleep (x)
-
-    # Get the average of the moisture value over x minutes
-    l = l / n
-    # Round m to 2 decimal points for consistency with adc_voltage class.
-    l = round(l, 2)
-    # Return the Value stored in m
-    return l
-
+    return avg_light_mode(x, light_mode_percent)
 
 def light_control(l, threshold, GPIO_pin):
     '''
@@ -81,21 +73,21 @@ def light_control(l, threshold, GPIO_pin):
 
     # SETUP RPi GPIO
     #PIN = 32                    # Pin used to actovate Valve MOSFET
-    GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
-    GPIO.setup(GPIO_pin, GPIO.OUT)   # Set GPIO Pin mode to output
-    GPIO.output(GPIO_pin, 0)         # Set GPIO to Low
+    # GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
+    # GPIO.setup(GPIO_pin, GPIO.OUT)   # Set GPIO Pin mode to output
+    # GPIO.output(GPIO_pin, 0)         # Set GPIO to Low
     
     # Define Light Sensor Pin Number
     sensor = AdcSensor(0)
     
     if l < threshold:
         state = 'Low Light Levels, Turning On Lights'
-        print('Light Level: {0}, {1}'.format(sensor.adc_percent, state))
+        print('Light Level: {0}, {1}'.format(l, state))
         GPIO.output(GPIO_pin, 1)
         time.sleep(1)
     else:
         state = 'Light Levels Nominal, Turning Off Lights'
-        print('Light Level: {0}, {1}'.format(sensor.adc_percent, state))
+        print('Light Level: {0}, {1}'.format(l, state))
         GPIO.output(GPIO_pin, 0)
         time.sleep(1)
 
@@ -107,6 +99,8 @@ def light_control(l, threshold, GPIO_pin):
 #     light_control(l, threshold, GPIO_pin)
 
 if __name__ == '__main__':
-   l = avg_light_percent(1)
-   print(l)
-   light_control(l, 50, 32)
+   while True:
+    light = AdcSensor(2)
+    l = light.adc_percent
+    print(l)
+    time.sleep(1)

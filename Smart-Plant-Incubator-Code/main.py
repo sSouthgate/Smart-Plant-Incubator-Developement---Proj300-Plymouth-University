@@ -74,7 +74,7 @@ def moisture_routine(x):
     moisture.valve_control(m, moisture_th, valve_GPIO)
     mqtt.unsubscribe(water_client, moist_th_topic)
 
-def light_routine():
+def light_routine(x):
     '''Function to be run on a thread for light functionality
     Based on avg_light_percent over x minutes, turn the lights on or off
     '''
@@ -83,7 +83,7 @@ def light_routine():
     mqtt.subscribe(light_client, light_th_topic)
     light_th = mqtt.get_payload(mqtt.light_q, light_default)
     print("Light Threashold = ", (light_th))
-    l = light_sensor.adc_percent
+    l = light.avg_light_percent(x)
     light.light_control(l, light_th, led_GPIO)
     mqtt.unsubscribe(light_client, light_th_topic)
 
@@ -93,13 +93,13 @@ def main():
     # Put each of these in their own threads
     
     # Publish avg moisture values every minute
-    moisture_publish(1)
+    moisture_publish(20)
     # Publish light values
     light_publish()
     # Avg over an hour
     moisture_routine(60)
     # Avg over a second
-    light_routine()
+    light_routine(2)
 
 
 try:
@@ -108,5 +108,8 @@ try:
         main()
 
 except KeyboardInterrupt:
+    GPIO.output(led_GPIO, False)
+    GPIO.output(valve_GPIO, False)
+    GPIO.cleanup()
     print("\nUser stopped program...")
     print("Closing program...")

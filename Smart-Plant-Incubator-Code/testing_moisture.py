@@ -6,7 +6,7 @@ sh = SlotHelper(SlotHelper.ADC)
 pin = sh.argv2pin()
 
 # connect to alalog pin 2(slot A2)
-PIN = 2
+PIN = 0
 
 sensor = GroveTest(pin)
 

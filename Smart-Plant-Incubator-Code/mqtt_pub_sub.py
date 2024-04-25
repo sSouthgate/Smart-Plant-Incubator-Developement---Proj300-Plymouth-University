@@ -2,7 +2,7 @@ import paho.mqtt.client as mqtt
 import time
 import queue as queue
 import random
-import main
+
 
 # Define Broker Parameters
 # Broker Address
@@ -44,8 +44,8 @@ def connect_mqtt(client_id):
         Adds message to queue for later retrieval
         '''
         q._put(message)
-        # print("message received " ,str(message.payload.decode("utf-8")))
-        # print("message topic=",message.topic)
+        print("message received " ,str(message.payload.decode("utf-8")))
+        print("message topic=",message.topic)
     
     def on_water_message(client, userdata, message):
         '''
@@ -128,6 +128,7 @@ def get_payload(q, default_val):
         if message is None:
             continue
         #print("queue:", str(message.payload.decode("utf-8")))
+        # If the value sent by broker is None then set to the default value
         if message == None:
             msg = default_val
         else:

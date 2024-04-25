@@ -42,16 +42,16 @@ moisture = AdcSensor(moisture_Pin)
 light = AdcSensor(light_Pin)
 
 # MQTT connect the client to the Broker
-sensor_client = mqtt.connect_mqtt("pub_sensor")
+# sensor_client = mqtt.connect_mqtt("pub_sensor")
 # water_client = mqtt.connect_mqtt("sub_water")
 # light_client = mqtt.connect_mqtt("sub_light")
-#Start the network loop - opens in it's own thread
-sensor_client.loop_start()
+# Start the network loop - opens in it's own thread
+# sensor_client.loop_start()
 # water_client.loop_start()
 # light_client.loop_start()
 # MQTT topics to publish to
-moisture_topic = "incubator/moisture/value"
-light_topic = "incubator/light/value"
+# moisture_topic = "incubator/moisture/value"
+# light_topic = "incubator/light/value"
 
 # Set the file path and the headers for the CSV file
 file_path = '/home/auzon/Documents/Smart-Plant-Incubator-Code/sensor_log.csv'
@@ -99,8 +99,8 @@ try:
             print('Time Elapsed: {0}s'.format(round(t1)))
             print('Moisture value: {0}%'.format(m))
             print('Light value: {0}%'.format(l))
-            mqtt.publish(sensor_client, moisture_topic, m)
-            mqtt.publish(sensor_client, light_topic, l)
+            # mqtt.publish(sensor_client, moisture_topic, m)
+            # mqtt.publish(sensor_client, light_topic, l)
             
             # Start writing data stream to data file.
             with open(file_path, 'a', newline='') as file:
@@ -113,7 +113,7 @@ try:
 except KeyboardInterrupt:
     print('\nTest Terminated by User, Closing Program...')
 
-sensor_client.loop_stop()
+#sensor_client.loop_stop()
 # water_client.loop_stop()
 # light_client.loop_stop()
 

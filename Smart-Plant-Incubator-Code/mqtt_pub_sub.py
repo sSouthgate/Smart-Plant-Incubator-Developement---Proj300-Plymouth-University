@@ -54,8 +54,8 @@ def connect_mqtt(client_id):
         Adds message to water_q for later retreival
         '''
         water_q._put(message)
-        # print("message received " ,str(message.payload.decode("utf-8")))
-        # print("message topic=",message.topic)
+        print("message received " ,str(message.payload.decode("utf-8")))
+        print("message topic=",message.topic)
     
     def on_light_message(client, userdata, message):
         '''
@@ -64,8 +64,8 @@ def connect_mqtt(client_id):
         Adds message to light_q for later retreival
         '''
         light_q._put(message)
-        # print("message received " ,str(message.payload.decode("utf-8")))
-        # print("message topic=",message.topic)
+        print("message received " ,str(message.payload.decode("utf-8")))
+        print("message topic=",message.topic)
 
     client = mqtt.Client(client_id=client_id, callback_api_version=mqtt.CallbackAPIVersion.VERSION2)
     client.username_pw_set(username, password)
@@ -102,6 +102,8 @@ def subscribe(client, topic):
     if status != 0:
         print(f"Failed to sub to topic {topic}")
         print("Error: ", (status))
+    else:
+        print(f"subbed to topic")
 
 
 def unsubscribe(client, topic):
@@ -123,17 +125,23 @@ def get_payload(q, default_val):
     Get payload stored in given queue
     Will loop for each message
     '''
-    while not q.empty():
+    if not q.empty():
         message = q._get()
         if message is None:
-            continue
+            print("message is None")
         #print("queue:", str(message.payload.decode("utf-8")))
         # If the value sent by broker is None then set to the default value
         if message == None:
+            print("Message == None")
             msg = default_val
         else:
+            print("Message has a value")
             msg = float(message.payload.decode("utf-8)"))
         #q.task_done()
+        return msg
+    else:
+        print("No message in queue")
+        msg = default_val
         return msg
 
 

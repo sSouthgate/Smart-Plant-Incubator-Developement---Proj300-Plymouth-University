@@ -96,6 +96,11 @@ def valve_control(m, threshhold, GPIO_pin):
     After data manipulation -
     Set the valve GPIO Pin high to open the valve for the required time
     '''
+
+    # SETUP RPi GPIO
+    GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
+    GPIO.setup(GPIO_pin, GPIO.OUT)   # Set GPIO Pin mode to output
+
     if m < threshhold:
         GPIO.output(GPIO_pin, 1)
         state = 'Soil Dry, Opening Valve'
@@ -111,7 +116,7 @@ def valve_control(m, threshhold, GPIO_pin):
     else:
         GPIO.output(GPIO_pin, 0)
         state = 'Soil is moist - No need to water'
-        print('Moisture Level: {0}, {1}'.format(m, state))
+        print('Moisture Level: {0}.\n{1}'.format(m, state))
     
 # def moisture_routine(threshold, x, GPIO_pin):
 #     '''Function to be run on a thread for valve functionality

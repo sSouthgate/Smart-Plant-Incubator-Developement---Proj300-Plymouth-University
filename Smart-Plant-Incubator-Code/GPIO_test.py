@@ -10,6 +10,7 @@ GPIO.setmode(GPIO.BOARD)
 # Set GPIO Pin mode
 GPIO.setup(Light, GPIO.OUT)
 GPIO.setup(Valve, GPIO.OUT)
+print(GPIO.input(Light), GPIO.input(Valve))
 GPIO.output(Light, False)
 GPIO.output(Valve, False)
 

@@ -55,7 +55,7 @@ light = AdcSensor(light_Pin)
 
 # Set the file path and the headers for the CSV file
 file_path = '/home/auzon/Documents/Smart-Plant-Incubator-Code/sensor_log.csv'
-headers = ["Moisture Level", "Light Levels", "Time in s", "Time of Day", "Date"]
+headers = ["Moisture Level", "Raw ADC", "Time in s", "Time of Day", "Date"]
 
 
 # Check if the file exists
@@ -93,21 +93,23 @@ try:
 
             # Load data into variables so that data is consistent across platforms
             m = moisture.adc_percent
-            l = light.adc_percent
+            #l = light.adc_percent
+            m1 = round((m / 100) * 3235)
 
             # Print info to terminal for inspection
             print('Time Elapsed: {0}s'.format(round(t1)))
             print('Moisture value: {0}%'.format(m))
-            print('Light value: {0}%'.format(l))
+            print('ADC raw value: {0}'.format(m1))
+            #print('Light value: {0}%'.format(l))
             # mqtt.publish(sensor_client, moisture_topic, m)
             # mqtt.publish(sensor_client, light_topic, l)
             
             # Start writing data stream to data file.
             with open(file_path, 'a', newline='') as file:
                 writer = csv.writer(file)                       
-                writer.writerow([m,l,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
+                writer.writerow([m,m1,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
             
-            time.sleep(60)
+            time.sleep(1)
 
 # When Ctrl+C is input do this:
 except KeyboardInterrupt:

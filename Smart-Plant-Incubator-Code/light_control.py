@@ -72,22 +72,20 @@ def light_control(l, threshold, GPIO_pin):
     '''
 
     # SETUP RPi GPIO
-    #PIN = 32                    # Pin used to actovate Valve MOSFET
-    # GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
-    # GPIO.setup(GPIO_pin, GPIO.OUT)   # Set GPIO Pin mode to output
-    # GPIO.output(GPIO_pin, 0)         # Set GPIO to Low
+    GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
+    GPIO.setup(GPIO_pin, GPIO.OUT)   # Set GPIO Pin mode to output
     
     # Define Light Sensor Pin Number
     sensor = AdcSensor(0)
     
     if l < threshold:
         state = 'Low Light Levels, Turning On Lights'
-        print('Light Level: {0}, {1}'.format(l, state))
+        print('Light Level: {0}.\n{1}'.format(l, state))
         GPIO.output(GPIO_pin, 1)
         time.sleep(1)
     else:
         state = 'Light Levels Nominal, Turning Off Lights'
-        print('Light Level: {0}, {1}'.format(l, state))
+        print('Light Level: {0}.\n{1}'.format(l, state))
         GPIO.output(GPIO_pin, 0)
         time.sleep(1)
 

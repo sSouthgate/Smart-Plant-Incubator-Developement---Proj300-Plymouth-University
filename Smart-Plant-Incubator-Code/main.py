@@ -139,31 +139,5 @@ def start_up():
         print("\nUser stopped program...")
         print("Closing program...")
 
-
-
-# try:    
-#     #time.sleep(2)
-#     start_up()
-#     GPIO.output(led_GPIO, False)
-#     GPIO.output(valve_GPIO, False)
-#     GPIO.cleanup()
-
-# except KeyboardInterrupt:
-#     start_up.t1.join()
-#     start_up.t2.join()
-#     start_up.t3.join()
-#     start_up.t4.join()
-
-#     start_up.t1.stop()
-#     start_up.t2.stop()
-#     start_up.t3.stop()
-#     start_up.t4.stop()
-#     time.sleep(5)
-#     GPIO.output(led_GPIO, False)
-#     GPIO.output(valve_GPIO, False)
-#     GPIO.cleanup()
-#     print("\nUser stopped program...")
-#     print("Closing program...")
-
 if __name__ == "__main__":
     start_up()

@@ -6,17 +6,17 @@
     {
       "state": {"entity_id":"person.auzon_apophis","state":"not_home","attributes":{"editable":true,"id":"auzon_apophis","latitude":50.3806525,"longitude":-4.1352028,"gps_accuracy":100,"source":"device_tracker.auz_phone","user_id":"ab5bca5480284c549cb7cf77a69c3f24","device_trackers":["device_tracker.auz_phone"],"friendly_name":"Auzon Apophis"},"last_changed":"2024-04-26T15:32:03.546976+00:00","last_reported":"2024-04-26T15:32:17.296392+00:00","last_updated":"2024-04-26T15:32:17.296392+00:00","context":{"id":"01HWDGJB8G8DTYRM3NJ9RA8MWG","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
       "state": {"entity_id":"tts.google_en_com","state":"unknown","attributes":{"friendly_name":"Google en com"},"last_changed":"2024-04-26T15:32:16.440773+00:00","last_reported":"2024-04-26T15:32:16.440773+00:00","last_updated":"2024-04-26T15:32:16.440773+00:00","context":{"id":"01HWDGJADR9AZ2HRQD5Y0592FB","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
       "state": {"entity_id":"device_tracker.auz_phone","state":"not_home","attributes":{"source_type":"gps","latitude":50.3806525,"longitude":-4.1352028,"gps_accuracy":100,"altitude":97,"course":0,"speed":0,"vertical_accuracy":100,"friendly_name":"Auz-phone"},"last_changed":"2024-04-26T15:32:16.531119+00:00","last_reported":"2024-04-26T15:32:16.531119+00:00","last_updated":"2024-04-26T15:32:16.531119+00:00","context":{"id":"01HWDGJAGKTGMAQR7JA56HTP0P","parent_id":null,"user_id":null}},
       "extra_data": null,
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
       "state": {"entity_id":"sensor.auz_phone_battery_level","state":"97","attributes":{"unit_of_measurement":"%","device_class":"battery","icon":"mdi:battery-90","friendly_name":"Auz-phone Battery level"},"last_changed":"2024-04-26T15:32:16.535525+00:00","last_reported":"2024-04-26T15:32:16.535525+00:00","last_updated":"2024-04-26T15:32:16.535525+00:00","context":{"id":"01HWDGJAGQS7145QXRPASE6TKG","parent_id":null,"user_id":null}},
@@ -24,7 +24,7 @@
         "native_value": 97,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
       "state": {"entity_id":"sensor.auz_phone_battery_state","state":"discharging","attributes":{"icon":"mdi:battery-minus","friendly_name":"Auz-phone Battery state"},"last_changed":"2024-04-26T15:32:16.537059+00:00","last_reported":"2024-04-26T15:32:16.537059+00:00","last_updated":"2024-04-26T15:32:16.537059+00:00","context":{"id":"01HWDGJAGSD417XC4YJTG8QJWB","parent_id":null,"user_id":null}},
@@ -32,7 +32,7 @@
         "native_value": "discharging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
       "state": {"entity_id":"sensor.auz_phone_charger_type","state":"none","attributes":{"icon":"mdi:battery","friendly_name":"Auz-phone Charger type"},"last_changed":"2024-04-26T15:32:16.538382+00:00","last_reported":"2024-04-26T15:32:16.538382+00:00","last_updated":"2024-04-26T15:32:16.538382+00:00","context":{"id":"01HWDGJAGT5JFB7QZEZ8WYMRRP","parent_id":null,"user_id":null}},
@@ -40,23 +40,23 @@
         "native_value": "none",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
-      "state": {"entity_id":"sensor.incubator_light_level","state":"85.79","attributes":{"unit_of_measurement":"%","icon":"mdi:sprout","friendly_name":"Incubator Light Level"},"last_changed":"2024-04-26T17:46:44.352250+00:00","last_reported":"2024-04-26T17:46:44.352250+00:00","last_updated":"2024-04-26T17:46:44.352250+00:00","context":{"id":"01HWDR8H80E567CNME6C82XAKZ","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.incubator_light_level","state":"86.83","attributes":{"unit_of_measurement":"%","icon":"mdi:sprout","friendly_name":"Incubator Light Level"},"last_changed":"2024-04-26T17:57:57.703956+00:00","last_reported":"2024-04-26T17:57:57.703956+00:00","last_updated":"2024-04-26T17:57:57.703956+00:00","context":{"id":"01HWDRX2T7CJ2D86B3N21EE5QJ","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": "85.79",
+        "native_value": "86.83",
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
-      "state": {"entity_id":"sensor.incubator_moisture","state":"unknown","attributes":{"unit_of_measurement":"%","icon":"mdi:sprout","friendly_name":"Incubator Moisture"},"last_changed":"2024-04-26T15:32:16.660409+00:00","last_reported":"2024-04-26T15:32:16.660409+00:00","last_updated":"2024-04-26T15:32:16.660409+00:00","context":{"id":"01HWDGJAMMSRYBCWK0MAWWWWW5","parent_id":null,"user_id":null}},
+      "state": {"entity_id":"sensor.incubator_moisture","state":"53.88","attributes":{"unit_of_measurement":"%","icon":"mdi:sprout","friendly_name":"Incubator Moisture"},"last_changed":"2024-04-26T17:57:57.665260+00:00","last_reported":"2024-04-26T17:57:57.665260+00:00","last_updated":"2024-04-26T17:57:57.665260+00:00","context":{"id":"01HWDRX2S119XJPYH62YQ0C1VY","parent_id":null,"user_id":null}},
       "extra_data": {
-        "native_value": null,
+        "native_value": "53.88",
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
       "state": {"entity_id":"number.incubator_valve_threshold","state":"0","attributes":{"min":0.0,"max":100.0,"step":1.0,"mode":"auto","assumed_state":true,"icon":"mdi:water-percent","friendly_name":"Incubator Valve Threshold"},"last_changed":"2024-04-26T17:45:13.736780+00:00","last_reported":"2024-04-26T17:45:13.736780+00:00","last_updated":"2024-04-26T17:45:13.736780+00:00","context":{"id":"01HWDR5RR7TX6NY913GFHV0ED4","parent_id":null,"user_id":"ab5bca5480284c549cb7cf77a69c3f24"}},
@@ -67,7 +67,7 @@
         "native_unit_of_measurement": null,
         "native_value": 0
       },
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
       "state": {"entity_id":"number.incubator_light_threshold","state":"100","attributes":{"min":0.0,"max":100.0,"step":1.0,"mode":"auto","assumed_state":true,"icon":"mdi:brightness-6","friendly_name":"Incubator Light Threshold"},"last_changed":"2024-04-26T17:45:15.193946+00:00","last_reported":"2024-04-26T17:45:15.193946+00:00","last_updated":"2024-04-26T17:45:15.193946+00:00","context":{"id":"01HWDR5T5RTKVGEHECTBQHG21S","parent_id":null,"user_id":"ab5bca5480284c549cb7cf77a69c3f24"}},
@@ -78,7 +78,7 @@
         "native_unit_of_measurement": null,
         "native_value": 100
       },
-      "last_seen": "2024-04-26T17:47:17.308092+00:00"
+      "last_seen": "2024-04-26T19:02:17.312762+00:00"
     },
     {
       "state": {"entity_id":"sensor.incubator_light","state":"unknown","attributes":{"icon":"mdi:sprout","friendly_name":"Incubator Light"},"last_changed":"2024-04-21T09:44:35.925684+00:00","last_reported":"2024-04-21T09:44:35.935236+00:00","last_updated":"2024-04-21T09:44:35.925684+00:00","context":{"id":"01HW00P3TNF25ESYKV9K0EFXXG","parent_id":null,"user_id":null}},

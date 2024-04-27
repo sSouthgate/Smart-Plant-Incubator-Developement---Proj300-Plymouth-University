@@ -15,6 +15,7 @@ from datetime import datetime
 from adc_sensor import AdcSensor
 import RPi.GPIO as GPIO
 import mqtt_pub_sub as mqtt
+import moisture_control as moisture
 
 # Grove Imports
 #from grove_light_sensor_v1_2 import GroveLightSensor
@@ -29,17 +30,17 @@ T = current_date_time.strftime('%H:%M:%S')  # Current Time in Hours:Minutes:Seco
 x = 1                                       # Time Valve will be open
 
 # SETUP RPi GPIO
-PIN = 32                    # Define RPi GPIO PIN
-GPIO.setmode(GPIO.BOARD)    # Set GPIO Pin numbering system
-GPIO.setup(PIN, GPIO.OUT)   # Set GPIO Pin mode to output
-GPIO.output(PIN, 0)         # Set GPIO to Low
+GPIO_pin = 36                    # Define RPi GPIO GPIO_pin
+GPIO.setmode(GPIO.BOARD)    # Set GPIO GPIO_pin numbering system
+GPIO.setup(GPIO_pin, GPIO.OUT)   # Set GPIO GPIO_pin mode to output
+GPIO.output(GPIO_pin, 0)         # Set GPIO to Low
 
 # Connect sensors to appropriate slots on hat
-light_Pin = 0
-moisture_Pin = 2
+light_pin = 0
+moisture_pin = 2
 # Define what grove sensor will be used
-moisture = AdcSensor(moisture_Pin)
-light = AdcSensor(light_Pin)
+moisture_sensor = AdcSensor(moisture_pin)
+#light = AdcSensor(light_GPIO_pin)
 
 # MQTT connect the client to the Broker
 # sensor_client = mqtt.connect_mqtt("pub_sensor")
@@ -72,15 +73,16 @@ if not os.path.exists(file_path):
 print('EXPERIMENT START:',T)
 
 # Open and Close Valve
-#GPIO.output(PIN, 1)                                     # Set Pin High
+#GPIO.output(GPIO_pin, 1)                                     # Set GPIO_pin High
 #time.sleep(x)                                           # Sleep for 1s
-#GPIO.output(PIN, 0)                                     # Set Pin to Low
+#GPIO.output(GPIO_pin, 0)                                     # Set GPIO_pin to Low
 
 # Write to the CSV to identify new test
 with open(file_path, 'a', newline='') as file:
                 csv_writer = csv.writer(file)                       
                 csv_writer.writerow(['NEW TEST'])
 
+n = 1
 
 try:   
     while True: #sensor.light > 10:
@@ -90,9 +92,10 @@ try:
             D = current_date_time.strftime('%d/%m')         # Define D as current Date in day/month
             t1 = time.time()                                # Define t1 as current time in seconds
             t1 = t1 - t0                                    # Substract t1(current time in s) from t0(Start time in s of program)
-
+            t1 = round(t1)
+                   
             # Load data into variables so that data is consistent across platforms
-            m = moisture.adc_percent
+            m = moisture_sensor.adc_percent
             #l = light.adc_percent
             m1 = round((m / 100) * 3235)
 
@@ -109,7 +112,13 @@ try:
                 writer = csv.writer(file)                       
                 writer.writerow([m,m1,round(t1),T,D])   # Sensor Value, Time Elapsed(in s), Current Time, Current Date
             
-            time.sleep(1)
+            if t1 == (n * 3600):
+                   GPIO.output(GPIO_pin, 1)
+                   time.sleep(1)
+                   GPIO.output(GPIO_pin, 0)
+                   n = n + 1
+            else: 
+                time.sleep(1)
 
 # When Ctrl+C is input do this:
 except KeyboardInterrupt:
@@ -119,9 +128,9 @@ except KeyboardInterrupt:
 # water_client.loop_stop()
 # light_client.loop_stop()
 
-# Reset GPIO pins
-GPIO.output(PIN, 0) # Set GPIO pin low
-GPIO.cleanup        # GPIO Clean Up (rests all pins to a neutral state)
+# Reset GPIO GPIO_pins
+GPIO.output(GPIO_pin, 0) # Set GPIO GPIO_pin low
+GPIO.cleanup        # GPIO Clean Up (rests all GPIO_pins to a neutral state)
 
 # Write to file that program ended
 with open(file_path, 'a', newline='') as file:

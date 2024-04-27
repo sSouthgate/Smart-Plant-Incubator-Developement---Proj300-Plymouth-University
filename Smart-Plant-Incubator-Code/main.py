@@ -105,10 +105,10 @@ def light_routine(x):
 
 def start_up():
     # Put each of these in their own threads
-    t1 = threading.Thread(target=moisture_publish, args=[0.016], daemon=True)
+    t1 = threading.Thread(target=moisture_publish, args=[5], daemon=True)
     t2 = threading.Thread(target=light_publish, args=[0.016], daemon=True)
-    t3 = threading.Thread(target=moisture_routine, args=[0.016], daemon=True)
-    t4 = threading.Thread(target=light_routine, args=[0.016], daemon=True)
+    t3 = threading.Thread(target=moisture_routine, args=[60], daemon=True)
+    t4 = threading.Thread(target=light_routine, args=[5], daemon=True)
     
     
     # Publish avg moisture values every x minutes    

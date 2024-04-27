@@ -1,0 +1,8 @@
+2024-04-26 20:17:56.421 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-26 20:18:45.428 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: {('radio_browser', '26bf8878e1d69114284de4e76247f9f9'): 54.141495916}
+2024-04-26 20:19:11.517 ERROR (MainThread) [homeassistant.components.homeassistant_alerts] Error requesting homeassistant_alerts data: Cannot connect to host alerts.home-assistant.io:443 ssl:default [Try again]
+2024-04-26 20:19:11.522 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-26 20:19:26.972 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-26 20:19:52.158 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-26 20:20:37.481 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2024-04-26 20:22:02.905 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'

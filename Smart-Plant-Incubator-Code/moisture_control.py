@@ -110,7 +110,7 @@ def valve_control(m, threshhold, GPIO_pin):
        #APPLY CHANGE IN MOISTURE OVER TIME EQUATION HERE#
         ################################################ 
         
-        time.sleep(1)
+        time.sleep(0.25)
         GPIO.output(GPIO_pin, 0)
         print('Water Dispensed, Valve Closed')
     else:
@@ -129,4 +129,4 @@ def valve_control(m, threshhold, GPIO_pin):
 if __name__ == '__main__':
    m = avg_moisture_percent(1)
    print(m)
-   #valve_control(m, 50, 36)
+   valve_control(m, 50, 36)

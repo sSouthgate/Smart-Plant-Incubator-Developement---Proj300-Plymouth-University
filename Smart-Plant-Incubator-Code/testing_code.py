@@ -27,7 +27,7 @@ current_date_time = datetime.now()
 # VARIABLES
 t0 = time.time()                            # Current time in s
 T = current_date_time.strftime('%H:%M:%S')  # Current Time in Hours:Minutes:Seconds
-x = 1                                       # Time Valve will be open
+x = 1                                       # random interger if required
 
 # SETUP RPi GPIO
 GPIO_pin = 36                    # Define RPi GPIO GPIO_pin

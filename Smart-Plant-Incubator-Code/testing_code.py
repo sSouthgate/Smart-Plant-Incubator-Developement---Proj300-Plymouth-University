@@ -101,6 +101,7 @@ try:
 
             # Print info to terminal for inspection
             print('Time Elapsed: {0}s'.format(round(t1)))
+            print(t1/3600)
             print('Moisture value: {0}%'.format(m))
             print('ADC raw value: {0}'.format(m1))
             #print('Light value: {0}%'.format(l))

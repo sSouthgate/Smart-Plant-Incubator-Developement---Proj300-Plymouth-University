@@ -117,13 +117,6 @@ def valve_control(m, threshhold, GPIO_pin):
         GPIO.output(GPIO_pin, 0)
         state = 'Soil is moist - No need to water'
         print('Moisture Level: {0}.\n{1}'.format(m, state))
-    
-# def moisture_routine(threshold, x, GPIO_pin):
-#     '''Function to be run on a thread for valve functionality
-#     Based on avg_moisture_percent over x minutes, deliver the required water amount
-#     '''
-#     m = avg_moisture_percent(x)
-#     valve_control(m, threshold, GPIO_pin)
 
 
 if __name__ == '__main__':

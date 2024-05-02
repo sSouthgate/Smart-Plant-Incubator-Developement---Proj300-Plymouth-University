@@ -61,7 +61,7 @@ class AdcSensor:
 
 #Grove = AdcSensor
 
-def main():
+def run():
     from helper import SlotHelper
     sh = SlotHelper(SlotHelper.ADC)
     pin = sh.argv2pin()
@@ -77,4 +77,4 @@ def main():
         time.sleep(1)
 
 if __name__ == '__main__':
-    main()
+    run()

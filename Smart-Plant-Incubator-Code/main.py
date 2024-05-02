@@ -39,8 +39,8 @@ light_th_topic = "incubator/light/threshold"
 # mqtt.subscribe(light_client, light_th_topic)
 
 # Default values for moisture and light threshold
-moisture_default = 60
-light_default = 50
+moisture_default = 45
+light_default = 40
 # Base threshhold variables - to be modified by HA through MQTT payloads
 moisture_th = moisture_default
 light_th = light_default
@@ -133,6 +133,7 @@ def start_up():
     except KeyboardInterrupt:
         print("Closing Threads...")
         kb_interupt.clear()
+        time.sleep(2)
         GPIO.output(led_GPIO, False)
         GPIO.output(valve_GPIO, False)
         GPIO.cleanup()
